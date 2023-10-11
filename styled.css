@@ -454,39 +454,84 @@ img {
 }
 @media screen and (max-width: 767px) {
   .slogan {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url("../images/header450.jpg");
-    background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url("../images/header450.jpg");
+    background-image: -webkit-gradient(linear, left top, right top,
+     from(var(--background-slogan-gradient)),
+      to(var(--background-slogan-gradient))),
+       url("../images/header450.jpg");
+    background-image: linear-gradient(to right,
+     var(--background-slogan-gradient),
+      var(--background-slogan-gradient)),
+       url("../images/header450.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+ (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
+  (min-resolution: 192dpi) and (max-width: 767px),
+   (min-resolution: 2dppx) and (max-width: 767px) {
   .slogan {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url("../images/header450-2x.jpg");
-    background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url("../images/header450-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top,
+     from(var(--background-slogan-gradient)),
+      to(var(--background-slogan-gradient))),
+       url("../images/header450-2x.jpg");
+    background-image: linear-gradient(to right,
+     var(--background-slogan-gradient),
+      var(--background-slogan-gradient)),
+       url("../images/header450-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .slogan {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url("../images/header768.jpg");
-    background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url("../images/header768.jpg");
+    background-image: -webkit-gradient(linear, left top, right top,
+     from(var(--background-slogan-gradient)),
+      to(var(--background-slogan-gradient))),
+       url("../images/header768.jpg");
+    background-image: linear-gradient(to right,
+     var(--background-slogan-gradient),
+      var(--background-slogan-gradient)),
+       url("../images/header768.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+ (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+   (min-resolution: 2dppx) and (min-width: 768px) {
   .slogan {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url("../images/header768-2x.jpg");
-    background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url("../images/header768-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top,
+     from(var(--background-slogan-gradient)),
+      to(var(--background-slogan-gradient))),
+       url("../images/header768-2x.jpg");
+    background-image: linear-gradient(to right,
+     var(--background-slogan-gradient),
+      var(--background-slogan-gradient)),
+       url("../images/header768-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .slogan {
     padding: 200px 0 200px 0;
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url("../images/header1600.jpg");
-    background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url("../images/header1600.jpg");
+    background-image: -webkit-gradient(linear, left top, right top,
+     from(var(--background-slogan-gradient)),
+      to(var(--background-slogan-gradient))),
+       url("../images/header1600.jpg");
+    background-image: linear-gradient(to right,
+     var(--background-slogan-gradient), 
+     var(--background-slogan-gradient)), 
+     url("../images/header1600.jpg");
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+ (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+   (min-resolution: 2dppx) and (min-width: 1200px) {
   .slogan {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--background-slogan-gradient)), to(var(--background-slogan-gradient))), url("../images/header1600-2x.jpg");
-    background-image: linear-gradient(to right, var(--background-slogan-gradient), var(--background-slogan-gradient)), url("../images/header1600-2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top,
+     from(var(--background-slogan-gradient)),
+      to(var(--background-slogan-gradient))),
+       url("../images/header1600-2x.jpg");
+    background-image: linear-gradient(to right,
+     var(--background-slogan-gradient),
+      var(--background-slogan-gradient)),
+       url("../images/header1600-2x.jpg");
   }
 }
 
