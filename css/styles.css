@@ -1334,7 +1334,7 @@ img {
   pointer-events: none;
 }
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1361,9 +1361,9 @@ img {
     max-width: 450px;
     max-height: 609px;
   }
-}
+} */
 
-.backdrop.is-hidden .modal {
+/* .backdrop.is-hidden .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1375,9 +1375,9 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-}
+} */
 
-.close-modal {
+/* .close-modal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1399,9 +1399,9 @@ img {
   background-color: var(--background-general);
   -webkit-transition: color var(--transition-timing) var(--transition-duration);
   transition: color var(--transition-timing) var(--transition-duration);
-}
+} */
 
-.icon-modal {
+/* .icon-modal {
   width: 18px;
   height: 18px;
   fill: currentColor;
@@ -1509,9 +1509,9 @@ img {
 
 .mailing input::placeholder {
   color: var(--color-footer-placeholder);
-}
+} */
 
-.button-send {
+/* .button-send {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1534,9 +1534,9 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-}
+} */
 
-.icon-send {
+/* .icon-send {
   width: 24px;
   height: 24px;
   fill: currentColor;
@@ -1551,9 +1551,9 @@ img {
   .button-send.posicion {
     margin-top: 0;
   }
-}
+} */
 
-.form {
+/* .form {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -1726,4 +1726,6 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-} /*# sourceMappingURL=main.css.map */
+} */
+
+/* # sourceMappingURL=main.css.map */
