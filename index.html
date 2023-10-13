@@ -1,214 +1,239 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>"СамирПласт", г. Харьков, Украина</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>    
-<!--general-->
-  <header class="header">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>"СамирПласт", г. Харьков, Украина</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!--general-->
+  <header class='header'>
     <div class="container logo__nav">
       <a href="./index.html" class="logo">Самир<span class="logo logo__up">Пласт</span></a>
-<!--navigation-->
-        <nav>
-          <div class="menu-devices">
-              <ul class="nav dot">
-                <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Главная</a></li>
-                <li class="nav__item"><a href="./description.html" class="nav__link">Описание</a></li>
-                <li class="nav__item"><a href="./index.html" class="nav__link">Контакты</a></li>
-              </ul>
-          </div>
-        </nav>
-<!--contact-->
-        <div class="contact-posicion">
-          <ul class="contact dot">
-            <li>
-              <a href="mailto:samirplast@i.ua" class="contact__icon mailto">
-                <svg class="envelope">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>samirplast@i.ua</a>
-            </li>
-            <li>
-              <a href="tel:+380632882888" class="contact__icon tel">
-                <svg class="smartphone">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>+38 063 288 28 88</a>
-            </li>
+      <!--navigation-->
+      <nav>
+        <div class="menu-devices">
+          <ul class="nav dot">
+            <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Главная</a></li>
+            <li class="nav__item"><a href="./product.html" class="nav__link">Продукция</a></li>
+            <li class="nav__item"><a href="./index.html" class="nav__link">Контакты</a></li>
           </ul>
-    </div>
+        </div>
+      </nav>
+      <!--contact-->
+      <div class="contact-posicion">
+        <ul class="contact dot">
+          <li>
+            <a href="mailto:samirplast@i.ua" class="contact__icon mailto">
+              <svg class="envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>samirplast@i.ua</a>
+          </li>
+          <li>
+            <a href="tel:+380632882888" class="contact__icon tel">
+              <svg class="smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>+38 063 288 28 88</a>
+          </li>
+        </ul>
+      </div>
+      <!-- menu__button-->
+      <div class="menu-toggle__posicion">
+        <button type="button" class="menu-toggle js-open-menu" aria-expanded="false">
+          <svg class="menu-icon__menu" aria-label="кнопка открытия мобильного меню">
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_40"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="menu-container">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg class="menu-icon__close" aria-label="кнопка закрытия мобильного меню">
+            <use class="icon-close" href="./images/icons.svg#icon-close_40"></use>
+          </svg>
+        </button>
+        <ul class="dot">
+          <li class="nav__menu"><a href="./index.html" class="nav__link nav__link--current">Главная</a></li>
+          <li class="nav__menu"><a href="./product.html" class="nav__link">Продукция</a></li>
+          <li class="nav__menu"><a href="./index.html" class="nav__link">Контакты</a></li>
+        </ul>
+        <ul class="dot">
+          <li>
+            <a href="tel:+380632882888" class="contact__icon tel">+38 063 288 28 88</a>
+          </li>
+          <li>
+            <a href="mailto:samirplast@i.ua" class="contact__icon mailto">samirplast@i.ua</a>
+          </li>
+        </ul>
+        <ul class="menu__network dot">
+          <li><a href="" class="menu__social">Instagram</a><span class="menu__span>">|</span></li>
+          <li><a href="" class="menu__social">Twitter</a><span class="menu__span>">|</span></li>
+          <li><a href="" class="menu__social">Facebook</a><span class="menu__span>">|</span></li>
+        </ul>
+      </div>
   </header>
-    <main>
-<!--content-->
-        <section class="slogan">
-          <div class="container">
-            <h1 class="slogan__titel">Качественная упаковка для<br />вашего бизнеса</h1>
-          </div>
-        </section>
-      <div class="work__section">
-        <section class="section unsection">
-          <div class="container">
-              <h2 class="titels">Наша продукция</h2>
-            <ul class="work dot">
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+  <main>
+    <!--content-->
+    <section class="slogan">
+      <div class="container">
+        <h1 class="slogan__titel">Качественная упаковка для<br />вашего бизнеса</h1>
       </div>
-      <div class="work__section">
-        <section class="section unsection">
-          <div class="container">
-            <ul class="work dot">
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
+    </section>
+    <div class="work__section">
+      <section class="section unsection">
+        <div class="container">
+          <h2 class="titels">Наша продукция</h2>
+          <ul class="work dot">
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
                     ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
                 <div class="label">
                   <p class="label__text">Пакеты</p>
                 </div>
-                </div>
-              </li>
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-              <li class="work__item">
-                <div class="label-thumb">
-                  <img class="fotoline" srcset="
-                    ./images/works-desctop.jpg 370w,
-                    ./images/works-desctop-2x.jpg 740w"
-                    sizes="370px"
-                    src="./images/works-desctop.jpg" alt="Десктопні додатки" />
-                <div class="label">
-                  <p class="label__text">Пакеты</p>
-                </div>
-                </div>
-              </li>
-              
-            </ul>
-          </div>
-        </section>
-      </div>
-    </main>
-<!--finish-->
-    <footer class="footer">
-      <div class="container social-contact">
-        <div class="footer-contact">
-          <a href="./index.html" class="logo">Самир<span class="logo logo__down">Пласт</span></a>
-          <address>
-            <ul class="address dot">
-              <li>
-                <a href="https://goo.gl/maps/jnqnLiTGTyFEsg5t9" target="_blank" rel="noopener noreferrer nofollow"
-                  class="address">г. Харьков, ул. Академика Павлова, 120</a>
-              </li>
-              <li><a href="mailto:samirplast@i.ua" class="link">samirplast@i.ua</a></li>
-              <li><a href="tel:+380632882888" class="link">+38 063 288 28 88</a></li>
-            </ul>
-          </address>
-        </div>
-        <div>
-          <p class="compound">Присоединяйтесь</p>
-          <ul class="footer-social dot">
-            <li><a href="" class="a-footer">
-                <svg class="icon-footer">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg></a>
+              </div>
             </li>
-            <li><a href="" class="a-footer">
-                <svg class="icon-footer">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg></a>
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
             </li>
-            <li><a href="" class="a-footer">
-                <svg class="icon-footer">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg></a>
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
-      
+      </section>
+    </div>
+    <div class="work__section">
+      <section class="section unsection">
+        <div class="container">
+          <ul class="work dot">
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
+            </li>
+            <li class="work__item">
+              <div class="label-thumb">
+                <img class="fotoline" srcset="
+                    ./images/works-desctop.jpg 370w,
+                    ./images/works-desctop-2x.jpg 740w" sizes="370px" src="./images/works-desctop.jpg"
+                  alt="Десктопні додатки" />
+                <div class="label">
+                  <p class="label__text">Пакеты</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!--finish-->
+  <footer class="footer">
+    <div class="container social-contact">
+      <div class="footer-contact">
+        <a href="./index.html" class="logo">Самир<span class="logo logo__down">Пласт</span></a>
+        <address>
+          <ul class="address dot">
+            <li>
+              <a href="https://goo.gl/maps/jnqnLiTGTyFEsg5t9" target="_blank" rel="noopener noreferrer nofollow"
+                class="address">г. Харьков, ул. Академика Павлова, 120</a>
+            </li>
+            <li><a href="mailto:samirplast@i.ua" class="link">samirplast@i.ua</a></li>
+            <li><a href="tel:+380632882888" class="link">+38 063 288 28 88</a></li>
+          </ul>
+        </address>
       </div>
-    </footer>
-  </body>
+      <div>
+        <p class="compound">Присоединяйтесь</p>
+        <ul class="footer-social dot">
+          <li><a href="" class="a-footer">
+              <svg class="icon-footer">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg></a>
+          </li>
+          <li><a href="" class="a-footer">
+              <svg class="icon-footer">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg></a>
+          </li>
+          <li><a href="" class="a-footer">
+              <svg class="icon-footer">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+  <script src="./js/mobile-menu.js"></script>
+</body>
+
 </html>
