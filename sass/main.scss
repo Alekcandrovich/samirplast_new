@@ -1,18 +1,12 @@
-@import './utilits/variables';
-@import './utilits/global';
+@import './component/description';
+@import './component/description-overlay';
+@import './component/finish';
 @import './component/logotip';
 @import './component/nav-menu';
-@import './component/section&container';
 @import './component/overlay&slogan';
-@import './component/button';
-@import './component/specifical';
+@import './component/section&container';
 @import './component/titels';
 @import './component/work';
-@import './component/comand';
-@import './component/client';
-@import './component/finish';
-@import './component/portfolio';
-@import './component/portfolio-overlay';
-@import './component/modal-window';
-@import './component/finish-form';
-@import './component/modal-form';
+
+@import './utilits/global';
+@import './utilits/variables';
