@@ -1,0 +1,96 @@
+.comand {
+  padding: 0;
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+}
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+     flex-wrap: wrap;
+     gap: 30px; 
+}
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 -30px;
+}
+}
+.background-comand {
+  background-color: var(--background-comand);
+}
+.comand .foto {
+   @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+}   
+   @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+}
+   @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 120px) / 4);
+      margin-left: 30px;
+}  
+  box-shadow: var(--color-comand-shadow);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-general);
+}
+
+.comand .fotoline {
+  margin-bottom: 30px;
+}
+.comand .name {
+  margin: 0 0 10px 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  color: var(--color-general);
+}
+.comand .proff {
+  margin: 0 0 16px 0;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--color-last);
+}
+.social-card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 0 24px 0;
+  margin: 0;  
+  @media screen and (min-width: 1200px) {
+  padding: 0 0 30px 0;
+}
+}
+.a-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0 auto;
+
+  color: var(--color-border-klient);
+
+  transition: background-color var(--transition-timing) var(--transition-duration),
+              color var(--transition-timing) var(--transition-duration);
+}
+.icon-card {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  align-items: center;
+}
+.a-card:hover,
+.a-card:focus {
+  background-color: var(--color-button-activ);
+  color: var(--color-slogan);
+}
