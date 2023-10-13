@@ -5,7 +5,8 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
-  color: var(--color-link);
+  color: red;
+  /* color: var(--color-link); */
 }
   .logo__up {
   @media screen and (min-width: 768px) {
@@ -14,10 +15,12 @@
 }
 .logo__up {
   padding: 0;
-  color: var(--color-logo);
+  color: orange;
+  /* color: var(--color-link); */
 }
 .logo__down {
-  color: var(--color-slogan);
+  color: orangered;
+  /* color: var(--color-slogan); */
   @media screen and (min-width: 1200px) {
     margin-right: -93px;
   }
