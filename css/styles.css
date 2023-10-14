@@ -832,14 +832,39 @@ img {
   padding: 0;
   margin: 0;
   white-space: nowrap;
-  animation: marquee 7s linear infinite;
 }
 
-@keyframes marquee {
+.marquee1 {
+  animation: marquee1 8s linear infinite;
+}
+@keyframes marquee1 {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
 
+.marquee2 {
+  animation: marquee2 10s linear infinite;
+}
+@keyframes marquee2 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee3 {
+  animation: marquee3 9s linear infinite;
+}
+@keyframes marquee3 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee4 {
+  animation: marquee4 11s linear infinite;
+}
+@keyframes marquee4 {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
 
 /* .label {
   display: flex;
