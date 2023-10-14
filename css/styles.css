@@ -744,6 +744,11 @@ img {
   transition: transform 0.3s;
 }
 
+.fotoline {
+  max-width: 270px;
+  height: 215px;
+}
+
 
 
 
