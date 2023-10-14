@@ -3,21 +3,22 @@
   --background-slogan: #2f303a;
   --background-slogan-gradient: rgba(47, 48, 58, 0.4);
   --background-comand: #f5f4fa;
-  --background-label: rgba(47, 48, 58, 0.8);
-  --color-logo: #000000;
-  --color-general: #212121;
+  --background-label: rgba(236, 182, 65, 0.6);
+  --color-logo: red;
+  --color-general: red;
   --color-border-header: #ececec;
   --color-last: #757575;
-  --color-link: #2196f3;
+  --color-nav-link: orange;
+  --color-footer-link: orangered;
   --color-slogan: #ffffff;
   --color-button: #f5f4fa;
   --color-button-activ: #188ce8;
-  --color-label: #ffffff;
+  --color-label: red;
   --color-icon-footer: rgba(255, 255, 255, 0.1);
   --color-border-index: #f5f4fa;
   --color-border-portfolio: #eeeeee;
   --color-border-klient: #afb1b8;
-  --color-overlay-portfolio: rgba(33, 150, 243, 0.9);
+  --color-overlay-portfolio: rgba(245, 200, 77, 0.8);
   --color-address-finish: rgba(255, 255, 255, 0.6);
   --color-shadow-order: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --color-comand-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -70,8 +71,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: red;
-  /* color: var(--color-link); */
+  color: var(--color-logo);
 }
 
 @media screen and (min-width: 768px) {
@@ -82,13 +82,11 @@ img {
 
 .logo__up {
   padding: 0;
-  color: orange;
-  /* color: var(--color-link); */
+  color: var(--color-nav-link);
 }
 
 .logo__down {
-  color: orangered;
-  /* color: var(--color-slogan); */
+  color: var(--color-footer-link);
 }
 @media screen and (min-width: 1200px) {
   .logo__down {
@@ -170,12 +168,12 @@ img {
 
 .nav__link:hover,
 .nav__link:focus {
-  color: var(--color-link);
+    color: var(--color-nav-link);
 }
 
 .nav__link--current {
   position: relative;
-  color: var(--color-link);
+  color: var(--color-nav-link);
 }
 
 @media screen and (min-width: 768px) {
@@ -188,7 +186,7 @@ img {
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background-color: var(--color-link);
+    background-color: var(--color-nav-link);
   }
 }
 
@@ -247,7 +245,7 @@ img {
 @media screen and (min-width: 768px) {
   .contact__icon.mailto:hover,
   .contact__icon.mailto:focus {
-    color: var(--color-link);
+    color: var(--color-nav-link);
   }
 }
 
@@ -286,7 +284,7 @@ img {
 @media screen and (min-width: 768px) {
   .contact__icon.tel:hover,
   .contact__icon.tel:focus {
-    color: var(--color-link);
+    color: var(--color-nav-link);
   }
 }
 
@@ -335,7 +333,7 @@ img {
 
 .menu-icon__menu:hover,
 .menu-icon__menu:focus {
-  color: var(--color-link);
+  color: var(--color-nav-link);
 }
 
 .menu-icon__close {
@@ -354,7 +352,7 @@ img {
 
 .menu-icon__close:hover,
 .menu-icon__close:focus {
-  color: var(--color-link);
+  color: var(--color-nav-link);
 }
 
 .icon-menu {
@@ -613,7 +611,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-slogan);
+  color: var(--color-nav-link);
 }
 @media screen and (min-width: 1200px) {
   .slogan__titel {
@@ -793,8 +791,7 @@ img {
 
 .address .link:hover,
 .address .link:focus {
-  /* color: var(--color-link) */
-  color: orangered;
+  color: var(--color-footer-link)
 }
 
 @media screen and (min-width: 768px) {
@@ -910,8 +907,7 @@ img {
 
 .a-footer:hover,
 .a-footer:focus {
-  /* background-color: var(--color-button-activ); */
-    background-color: orangered;
+  background-color: var(--color-footer-link);
   color: var(--color-slogan);
 }
 
@@ -972,7 +968,7 @@ img {
 
 .content .titel-port {
   margin: 0;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-general);
@@ -980,7 +976,7 @@ img {
 
 .content .text-port {
   margin: 0;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--color-last);
@@ -1013,10 +1009,10 @@ img {
   transition: transform var(--transition-timing) var(--transition-duration),
     -webkit-transform var(--transition-timing) var(--transition-duration);
   background-color: var(--color-overlay-portfolio);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.556;
   letter-spacing: 0.03em;
-  padding: 63px 24px;
+  padding: 0 10px;
   margin: 0;
   text-decoration: none;
   color: var(--color-label);
