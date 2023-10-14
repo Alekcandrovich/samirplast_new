@@ -408,15 +408,23 @@ img {
   transform: rotate(90deg);
 }
 
-.section {
+.section1 {
   padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
-  .section {
-    padding: 94px 0;
+  .section1 {
+    padding: 30px 0;
   }
 }
 
+.section2 {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section2 {
+    padding: 60px 0;
+  }
+}
 .unsection {
   padding-top: 0;
 }
@@ -822,7 +830,16 @@ img {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 7s linear infinite;
 }
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
 
 /* .comand {
   padding: 0;
