@@ -749,7 +749,7 @@ img {
 
 
 .footer {
-  padding: 60px 0;
+  padding: 50px 0;
   background-color: var(--background-slogan);
 }
 @media screen and (min-width: 1200px) {
@@ -793,7 +793,8 @@ img {
 
 .address .link:hover,
 .address .link:focus {
-  color: var(--color-link);
+  /* color: var(--color-link) */
+  color: red;
 }
 
 @media screen and (min-width: 768px) {
