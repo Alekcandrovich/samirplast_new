@@ -794,7 +794,7 @@ img {
 .address .link:hover,
 .address .link:focus {
   /* color: var(--color-link) */
-  color: red;
+  color: orangered;
 }
 
 @media screen and (min-width: 768px) {
@@ -910,7 +910,8 @@ img {
 
 .a-footer:hover,
 .a-footer:focus {
-  background-color: var(--color-button-activ);
+  /* background-color: var(--color-button-activ); */
+    background-color: orangered;
   color: var(--color-slogan);
 }
 
