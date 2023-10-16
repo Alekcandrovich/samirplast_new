@@ -1,6 +1,6 @@
 :root {
   --background-general: #ffffff;
-  --background-slogan: #2f303a;
+  --background-slogan: #f5d3a6;
   --background-slogan-gradient: rgba(47, 48, 58, 0.4);
   --background-comand: #f5f4fa;
   --background-label: rgba(236, 182, 65, 0.6);
@@ -12,13 +12,12 @@
   --color-footer-link: orangered;
   --color-slogan: #ffffff;
   --color-button: #f5f4fa;
-  --color-button-activ: #188ce8;
   --color-label: red;
   --color-icon-footer: rgba(255, 255, 255, 0.1);
   --color-border-index: #f5f4fa;
   --color-border-portfolio: #eeeeee;
   --color-border-klient: #afb1b8;
-  --color-overlay-portfolio: rgba(245, 200, 77, 0.8);
+  --color-overlay-portfolio: rgba(247, 217, 134, 0.8);
   --color-address-finish: rgba(255, 255, 255, 0.6);
   --color-shadow-order: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --color-comand-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -628,6 +627,7 @@ img {
 .titels {
   padding: 0;
   margin: 0 0 30px 0;
+  font-weight: 900;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -758,7 +758,7 @@ img {
 
 .address {
   margin: 28px 0 0 0;
-  color: var(--color-slogan);
+  color: var(--color-general);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -774,8 +774,8 @@ img {
 .address .link {
   display: block;
   margin: 12px 0 0 0;
-  color: var(--color-slogan);
-  color: var(--color-address-finish);
+  color: var(--color-general);
+  color: var(--color-general);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
@@ -839,7 +839,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--background-general);
+  color: var(--color-general);
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .compound {
@@ -888,7 +888,7 @@ img {
   height: 44px;
   padding: 0;
   margin: 0 auto;
-  color: var(--color-slogan);
+  color: var(--color-general);
   background-color: var(--color-icon-footer);
   -webkit-transition: background-color var(--transition-timing) var(--transition-duration),
     color var(--transition-timing) var(--transition-duration);
@@ -968,7 +968,7 @@ img {
 
 .content .titel-port {
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-general);
