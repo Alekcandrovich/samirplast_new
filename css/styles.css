@@ -2,6 +2,7 @@
   --background-general: #ffffff;
   --background-slogan: #f5d3a6;
   --background-slogan-gradient: rgba(47, 48, 58, 0.4);
+  --background-icon-footer: rgba(255, 255, 255, 0.1);
   --background-label: rgba(236, 182, 65, 0.6);
   --color-logo: red;
   --color-general: red;
@@ -9,32 +10,17 @@
   --color-last: #757575;
   --color-nav-link: orange;
   --color-footer-link: orangered;
-  --color-slogan: #ffffff;
-  --color-button: #f5f4fa;
+  --color-icon-footer: #ffffff;
   --color-label: red;
-  --color-icon-footer: rgba(255, 255, 255, 0.1);
-  --color-border-index: #f5f4fa;
-  --color-border-portfolio: #eeeeee;
-  --color-border-klient: #afb1b8;
-  --color-overlay-portfolio: rgba(247, 217, 134, 0.8);
-  --color-address-finish: rgba(255, 255, 255, 0.6);
-  --color-shadow-order: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --color-comand-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  --color-border-product: #eeeeee;
+  --color-overlay-product: rgba(247, 217, 134, 0.8);
+  --color-product-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  --color-shadow-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   --color-backdrop: rgba(0, 0, 0, 0.2);
-  --transition-duration: 500ms;
+  --transition-duration: 250ms;
+  --transition-duration-product: 500ms;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
-  --color-border-form: rgba(33, 33, 33, 0.2);
-  --color-form-placeholder: rgba(117, 117, 117, 0.5);
-  --color-footer-placeholder: rgba(255, 255, 255, 0.6);
-  --color-border-close: rgba(0, 0, 0, 0.1);
 }
-
-
-
-
 
 body {
   margin: 0;
@@ -58,10 +44,6 @@ img {
 .header {
   border-bottom: 1px solid var(--color-border-header);
 }
-
-
-
-
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -166,7 +148,7 @@ img {
 
 .nav__link:hover,
 .nav__link:focus {
-    color: var(--color-nav-link);
+  color: var(--color-nav-link);
 }
 
 .nav__link--current {
@@ -187,10 +169,6 @@ img {
     background-color: var(--color-nav-link);
   }
 }
-
-
-
-
 
 @media screen and (min-width: 1200px) {
   .contact {
@@ -296,10 +274,6 @@ img {
   align-items: center;
 }
 
-
-
-
-
 .menu-toggle {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -367,10 +341,6 @@ img {
     display: none;
   }
 }
-
-
-
-
 
 .menu-container {
   -webkit-transform: translateY(100%);
@@ -466,10 +436,6 @@ img {
     width: 1200px;
   }
 }
-
-
-
-
 
 .slogan {
   margin-left: auto;
@@ -620,10 +586,6 @@ img {
   }
 }
 
-
-
-
-
 .titels {
   padding: 0;
   margin: 0 0 30px 0;
@@ -700,51 +662,67 @@ img {
   animation: marquee1 8s linear infinite;
 }
 @keyframes marquee1 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee2 {
   animation: marquee2 10s linear infinite;
 }
 @keyframes marquee2 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee3 {
   animation: marquee3 9s linear infinite;
 }
 @keyframes marquee3 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee4 {
   animation: marquee4 11s linear infinite;
 }
 @keyframes marquee4 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee5 {
   animation: marquee5 15s linear infinite;
 }
 @keyframes marquee5 {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .choice:hover,
 .choice:focus {
-  transform: scale(1.05) rotate(1deg);
+  transform: scale(1.07) rotate(3deg);
   transition: transform 0.3s;
 }
-
-
-
-
 
 .footer {
   padding: 50px 0;
@@ -775,7 +753,6 @@ img {
   display: block;
   margin: 12px 0 0 0;
   color: var(--color-general);
-  color: var(--color-general);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
@@ -791,7 +768,7 @@ img {
 
 .address .link:hover,
 .address .link:focus {
-  color: var(--color-footer-link)
+  color: var(--color-footer-link);
 }
 
 @media screen and (min-width: 768px) {
@@ -889,7 +866,7 @@ img {
   padding: 0;
   margin: 0 auto;
   color: var(--color-general);
-  background-color: var(--color-icon-footer);
+  background-color: var(--background-icon-footer);
   -webkit-transition: background-color var(--transition-timing) var(--transition-duration),
     color var(--transition-timing) var(--transition-duration);
   transition: background-color var(--transition-timing) var(--transition-duration),
@@ -908,12 +885,8 @@ img {
 .a-footer:hover,
 .a-footer:focus {
   background-color: var(--color-footer-link);
-  color: var(--color-slogan);
+  color: var(--color-icon-footer);
 }
-
-
-
-
 
 .content {
   display: -webkit-box;
@@ -944,8 +917,8 @@ img {
 
 .content__clik:hover,
 .content__clik:focus {
-  -webkit-box-shadow: var(--color-comand-shadow);
-  box-shadow: var(--color-comand-shadow);
+  -webkit-box-shadow: var(--color-product-shadow);
+  box-shadow: var(--color-product-shadow);
 }
 
 .flex-grow {
@@ -962,7 +935,7 @@ img {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  border: 1px solid var(--color-border-portfolio);
+  border: 1px solid var(--color-border-product);
   padding: 20px 24px;
 }
 
@@ -1001,14 +974,16 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(100%);
+  /* -webkit-transform: translateY(100%); */
   transform: translateY(100%);
-  -webkit-transition: -webkit-transform var(--transition-timing) var(--transition-duration);
+  transition: transform var(--transition-timing) var(--transition-duration),
+    transform var(--transition-timing) var(--transition-duration-product);
+  /* -webkit-transition: -webkit-transform var(--transition-timing) var(--transition-duration);
   transition: -webkit-transform var(--transition-timing) var(--transition-duration);
   transition: transform var(--transition-timing) var(--transition-duration);
   transition: transform var(--transition-timing) var(--transition-duration),
-    -webkit-transform var(--transition-timing) var(--transition-duration);
-  background-color: var(--color-overlay-portfolio);
+    -webkit-transform var(--transition-timing) var(--transition-duration-product); */
+  background-color: var(--color-overlay-product);
   font-size: 16px;
   line-height: 1.556;
   letter-spacing: 0.03em;
