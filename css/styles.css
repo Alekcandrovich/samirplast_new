@@ -491,13 +491,13 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/header450.jpg');
+      url('../images/general_450.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/header450.jpg');
+      url('../images/general_450.jpg');
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -512,13 +512,13 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/header450-2x.jpg');
+      url('../images/general_450@2x.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/header450-2x.jpg');
+      url('../images/general_450@2x.jpg');
   }
 }
 @media screen and (min-width: 768px) {
@@ -530,13 +530,13 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/header768.jpg');
+      url('../images/general_768.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/header768.jpg');
+      url('../images/general_768.jpg');
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -551,13 +551,13 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/header768-2x.jpg');
+      url('../images/general_768@2x.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/header768-2x.jpg');
+      url('../images/general_768@2x.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
@@ -570,13 +570,13 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/header1600.jpg');
+      url('../images/general_1600.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/header1600.jpg');
+      url('../images/general_1600.jpg');
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
@@ -591,13 +591,13 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/header1600-2x.jpg');
+      url('../images/general_1600@2x.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/header1600-2x.jpg');
+      url('../images/general_1600@2x.jpg');
   }
 }
 
