@@ -491,16 +491,16 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/general_450.jpg');
+      url('../images/general_450@2x.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/general_450.jpg');
+      url('../images/general_450@2x.jpg');
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+/* @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
   (min-resolution: 192dpi) and (max-width: 767px),
   (min-resolution: 2dppx) and (max-width: 767px) {
@@ -520,7 +520,7 @@ img {
       ),
       url('../images/general_450@2x.jpg');
   }
-}
+} */
 @media screen and (min-width: 768px) {
   .slogan {
     background-image: -webkit-gradient(
@@ -530,16 +530,16 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/general_768.jpg');
+      url('../images/general_768@2x.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/general_768.jpg');
+      url('../images/general_768@2x.jpg');
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+/* @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
@@ -559,7 +559,7 @@ img {
       ),
       url('../images/general_768@2x.jpg');
   }
-}
+} */
 @media screen and (min-width: 1200px) {
   .slogan {
     padding: 200px 0 200px 0;
@@ -570,16 +570,16 @@ img {
         from(var(--background-slogan-gradient)),
         to(var(--background-slogan-gradient))
       ),
-      url('../images/general_1600.jpg');
+      url('../images/general_1600@2x.jpg');
     background-image: linear-gradient(
         to right,
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/general_1600.jpg');
+      url('../images/general_1600@2x.jpg');
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+/* @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
   (min-resolution: 192dpi) and (min-width: 1200px),
   (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -599,7 +599,7 @@ img {
       ),
       url('../images/general_1600@2x.jpg');
   }
-}
+} */
 
 .slogan__titel {
   margin: 0 0 30px 0;
