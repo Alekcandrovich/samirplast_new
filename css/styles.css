@@ -370,9 +370,6 @@ img {
     padding: 60px 0;
   }
 }
-.unsection {
-  padding-top: 0;
-}
 
 .container {
   margin-left: auto;
@@ -833,4 +830,90 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+
+
+
+
+
+
+
+/* .a3 {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+margin-right: 20px;
+}
+
+.fotoline {
+  max-width: 100%;
+  border: 2px solid #00f;
+  margin-right: 20px;
+}
+
+.a4 {
+  border: 2px solid #000;
+  padding: 10px;
+  width: calc((100% - 20px) /4);
+}
+
+.section3 {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section3 {
+    padding: 30px 0;
+  }
+}
+
+.a1 {
+  display: flex;
+  margin: 0 0 0 -30px;
+  padding: 0;
+}
+
+.a2 {
+  flex-basis: calc(25% - 30px);
+  margin-left: 30px;
+} */
+
+
+.label0-thumb {
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+}
+
+.label0-thumb img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #00f;
+}
+
+.label0-thumb .label0 {
+  display: flex;
+  flex-direction: column; /* Текст будет идти вниз */
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 30px;
+  background-color: var(--background-label);
+  position: absolute;
+  bottom: 0;
+  right: -30px; /* Отступ текста справа */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.label0-thumb .label__text0 {
+  color: var(--color-label);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
 }
