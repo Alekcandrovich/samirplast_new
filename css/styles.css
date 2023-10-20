@@ -6,7 +6,7 @@
   --background-label: rgba(236, 182, 65, 0.6);
   --color-logo: #ff0000;
   --color-general: #ff0000;
-  --color-border-header: #ececec;
+  --color-border-general: #ececec;
   --color-last: #ff4500;
   --color-nav-link: #ffa500;
   --color-footer-link: #ff4500;
@@ -58,6 +58,7 @@ img {
   padding: 0;
   color: var(--color-nav-link);
 }
+
 @media screen and (min-width: 768px) {
   .logo__up {
     margin-right: 93px;
@@ -67,6 +68,7 @@ img {
 .logo__down {
   color: var(--color-footer-link);
 }
+
 @media screen and (min-width: 1200px) {
   .logo__down {
     margin-right: -93px;
@@ -85,13 +87,14 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+
   .nav,
   .contact {
     display: none;
   }
 }
 
-.nav__item + .nav__item {
+.nav__item+.nav__item {
   margin-left: 50px;
 }
 
@@ -123,6 +126,7 @@ img {
   transition: color var(--transition-timing) var(--transition-duration);
   color: var(--color-general);
 }
+
 @media screen and (min-width: 768px) {
   .nav__link {
     padding: 32px 0;
@@ -182,6 +186,7 @@ img {
   color: var(--color-general);
   transition: color var(--transition-timing) var(--transition-duration);
 }
+
 @media screen and (min-width: 768px) {
   .contact__icon.mailto {
     padding: 21px 0 5px 0;
@@ -191,6 +196,7 @@ img {
     cursor: pointer;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .contact__icon.mailto {
     padding: 32px 0;
@@ -200,6 +206,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
   .contact__icon.mailto:hover,
   .contact__icon.mailto:focus {
     color: var(--color-nav-link);
@@ -218,6 +225,7 @@ img {
   color: var(--color-link);
   transition: color var(--transition-timing) var(--transition-duration);
 }
+
 @media screen and (min-width: 768px) {
   .contact__icon.tel {
     padding: 5px 0 21px 0;
@@ -228,6 +236,7 @@ img {
     color: var(--color-general);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .contact__icon.tel {
     padding: 32px 0;
@@ -238,6 +247,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+
   .contact__icon.tel:hover,
   .contact__icon.tel:focus {
     color: var(--color-nav-link);
@@ -258,6 +268,7 @@ img {
   padding: 0;
   background-color: transparent;
 }
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -304,6 +315,7 @@ img {
   margin-left: auto;
   padding: 10px 0;
 }
+
 @media screen and (min-width: 768px) {
   .menu-toggle__posicion {
     display: none;
@@ -356,6 +368,7 @@ img {
 .section1 {
   padding: 60px 0;
 }
+
 @media screen and (min-width: 1200px) {
   .section1 {
     padding: 30px 0;
@@ -365,6 +378,7 @@ img {
 .section2 {
   padding: 60px 0;
 }
+
 @media screen and (min-width: 1200px) {
   .section2 {
     padding: 60px 0;
@@ -377,16 +391,19 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -395,43 +412,41 @@ img {
 
 .slogan {
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 1400px;
   background-color: var(--background-slogan);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 118px 0;
   text-align: center;
+
 }
+
 @media screen and (max-width: 767px) {
   .slogan {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--background-slogan-gradient),
-        var(--background-slogan-gradient)
-      ),
+        var(--background-slogan-gradient)),
       url('../images/general_450.png');
   }
 }
+
 @media screen and (min-width: 768px) {
   .slogan {
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--background-slogan-gradient),
-        var(--background-slogan-gradient)
-      ),
+        var(--background-slogan-gradient)),
       url('../images/general_768.png');
   }
 }
+
 @media screen and (min-width: 1200px) {
   .slogan {
     padding: 200px 0;
-    background-image: linear-gradient(
-        to right,
+    background-image: linear-gradient(to right,
         var(--background-slogan-gradient),
-        var(--background-slogan-gradient)
-      ),
-      url('../images/general_1600.png');
+        var(--background-slogan-gradient)),
+      url('../images/general_1400.png');
   }
 }
 
@@ -446,6 +461,7 @@ img {
   color: var(--color-nav-link);
   text-shadow: 1px 1px 10px var(--color-logo);
 }
+
 @media screen and (min-width: 1200px) {
   .slogan__titel {
     font-weight: 900;
@@ -464,6 +480,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-general);
 }
+
 @media screen and (min-width: 1200px) {
   .titels {
     margin: 50px 0 30px 0;
@@ -521,10 +538,12 @@ img {
 .marquee1 {
   animation: marquee1 8s linear infinite;
 }
+
 @keyframes marquee1 {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -533,10 +552,12 @@ img {
 .marquee2 {
   animation: marquee2 10s linear infinite;
 }
+
 @keyframes marquee2 {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -545,10 +566,12 @@ img {
 .marquee3 {
   animation: marquee3 9s linear infinite;
 }
+
 @keyframes marquee3 {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -557,10 +580,12 @@ img {
 .marquee4 {
   animation: marquee4 11s linear infinite;
 }
+
 @keyframes marquee4 {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -569,10 +594,12 @@ img {
 .marquee5 {
   animation: marquee5 15s linear infinite;
 }
+
 @keyframes marquee5 {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -588,6 +615,7 @@ img {
   padding: 50px 0;
   background-color: var(--background-slogan);
 }
+
 @media screen and (min-width: 1200px) {
   .footer {
     padding: 30px 0;
@@ -603,6 +631,7 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+
 @media screen and (min-width: 1200px) {
   .address {
     margin: 20px 0 0 0;
@@ -619,6 +648,7 @@ img {
   letter-spacing: 0.03em;
   transition: color var(--transition-timing) var(--transition-duration);
 }
+
 @media screen and (min-width: 1200px) {
   .address .link {
     margin: 9px 0 0 0;
@@ -636,6 +666,7 @@ img {
     justify-content: space-around;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .social-contact {
     display: flex;
@@ -646,11 +677,13 @@ img {
 .footer-contact {
   display: block;
 }
+
 @media screen and (max-width: 1199px) {
   .footer-contact {
     text-align: center;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .footer-contact {
     margin-right: 94px;
@@ -668,11 +701,13 @@ img {
   text-align: center;
   color: var(--color-general);
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .compound {
     margin: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .compound {
     margin: 0;
@@ -686,6 +721,7 @@ img {
   margin: 20px 0 0 0;
   justify-content: center;
 }
+
 @media screen and (min-width: 1200px) {
   .footer-social {
     justify-content: start;
@@ -737,6 +773,7 @@ img {
     flex-basis: calc((100% - 90px) / 2);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .content__clik {
     flex-basis: calc((100% - 90px) / 4);
@@ -839,49 +876,12 @@ img {
 
 
 
-/* .a3 {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-margin-right: 20px;
-}
-
-.fotoline {
-  max-width: 100%;
-  border: 2px solid #00f;
-  margin-right: 20px;
-}
-
-.a4 {
-  border: 2px solid #000;
-  padding: 10px;
-  width: calc((100% - 20px) /4);
-}
-
-.section3 {
-  padding: 60px 0;
-}
-@media screen and (min-width: 1200px) {
-  .section3 {
-    padding: 30px 0;
-  }
-}
-
-.a1 {
-  display: flex;
-  margin: 0 0 0 -30px;
-  padding: 0;
-}
-
-.a2 {
-  flex-basis: calc(25% - 30px);
-  margin-left: 30px;
-} */
 
 
 .label0-thumb {
   display: flex;
-  align-items: center; /* Выравнивание по вертикали */
+  align-items: center;
+  /* Выравнивание по вертикали */
 }
 
 .label0-thumb img {
@@ -892,7 +892,8 @@ margin-right: 20px;
 
 .label0-thumb .label0 {
   display: flex;
-  flex-direction: column; /* Текст будет идти вниз */
+  flex-direction: column;
+  /* Текст будет идти вниз */
   justify-content: center;
   align-items: center;
   width: 270px;
@@ -900,7 +901,8 @@ margin-right: 20px;
   background-color: var(--background-label);
   position: absolute;
   bottom: 0;
-  right: -30px; /* Отступ текста справа */
+  right: -30px;
+  /* Отступ текста справа */
   margin: 0;
   padding: 0;
   overflow: hidden;
