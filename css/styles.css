@@ -488,20 +488,24 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .work__section {
+  .product__section {
     display: none;
   }
 }
 
-.work {
+.product {
   display: flex;
   margin: 0 0 0 -30px;
   padding: 0;
 }
 
-.work__item {
+.product__item {
   flex-basis: calc(25% - 30px);
   margin-left: 30px;
+}
+
+.pruduct__photo {
+  border-radius: 10px;
 }
 
 .label-thumb {
@@ -515,6 +519,7 @@ img {
   width: 270px;
   height: 30px;
   background-color: var(--background-label);
+  border-radius: 8px;
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -538,12 +543,10 @@ img {
 .marquee1 {
   animation: marquee1 8s linear infinite;
 }
-
 @keyframes marquee1 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -552,12 +555,10 @@ img {
 .marquee2 {
   animation: marquee2 10s linear infinite;
 }
-
 @keyframes marquee2 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -566,12 +567,10 @@ img {
 .marquee3 {
   animation: marquee3 9s linear infinite;
 }
-
 @keyframes marquee3 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -580,12 +579,10 @@ img {
 .marquee4 {
   animation: marquee4 11s linear infinite;
 }
-
 @keyframes marquee4 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -594,7 +591,6 @@ img {
 .marquee5 {
   animation: marquee5 15s linear infinite;
 }
-
 @keyframes marquee5 {
   0% {
     transform: translateX(100%);
@@ -605,9 +601,15 @@ img {
   }
 }
 
-.choice:hover,
-.choice:focus {
-  transform: scale(1.07) rotate(3deg);
+.choice1:hover,
+.choice1:focus {
+  transform: scale(1.06) rotate(2deg);
+  transition: transform 0.3s;
+}
+
+.choice2:hover,
+.choice2:focus {
+  transform: scale(1.08);
   transition: transform 0.3s;
 }
 
@@ -777,6 +779,7 @@ img {
 @media screen and (min-width: 1200px) {
   .content__clik {
     flex-basis: calc((100% - 90px) / 4);
+    border-radius: 8px;
   }
 }
 
@@ -793,6 +796,7 @@ img {
 .card-port {
   flex-grow: 1;
   border: 1px solid var(--color-border-product);
+  border-radius: 8px;
   padding: 20px 24px;
 }
 
@@ -822,6 +826,7 @@ img {
   align-items: center;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .overlay-text {
@@ -872,16 +877,9 @@ img {
 
 
 
-
-
-
-
-
-
-.label0-thumb {
+.product-thumb {
   display: flex;
   align-items: center;
-  /* Выравнивание по вертикали */
 }
 
 .label0-thumb img {
@@ -893,7 +891,6 @@ img {
 .label0-thumb .label0 {
   display: flex;
   flex-direction: column;
-  /* Текст будет идти вниз */
   justify-content: center;
   align-items: center;
   width: 270px;
@@ -902,13 +899,12 @@ img {
   position: absolute;
   bottom: 0;
   right: -30px;
-  /* Отступ текста справа */
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.label0-thumb .label__text0 {
+.label0__text {
   color: var(--color-label);
   font-weight: 700;
   font-size: 14px;
@@ -918,4 +914,6 @@ img {
   padding: 0;
   margin: 0;
   white-space: nowrap;
+  border-radius: 8px;
+  border: 2px solid #ff0000;
 }
