@@ -410,7 +410,7 @@ img {
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/general_450.jpg');
+      url('../images/general_450.png');
   }
 }
 @media screen and (min-width: 768px) {
@@ -420,7 +420,7 @@ img {
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/general_768.jpg');
+      url('../images/general_768.png');
   }
 }
 @media screen and (min-width: 1200px) {
@@ -431,7 +431,7 @@ img {
         var(--background-slogan-gradient),
         var(--background-slogan-gradient)
       ),
-      url('../images/general_1600.jpg');
+      url('../images/general_1600.png');
   }
 }
 
