@@ -31,7 +31,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  width: 270px;
   height: auto;
 }
 
@@ -822,9 +822,16 @@ ul {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .content__clik {
+      flex-basis: calc((100% - 160px) / 1);
+      border-radius: 8px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .content__clik {
-    flex-basis: calc((100% - 90px) / 2);
+    flex-basis: calc((100% - 150px) / 2);
     border-radius: 8px;
   }
 }
@@ -832,13 +839,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .content__clik {
     flex-basis: calc((100% - 90px) / 4);
-    border-radius: 8px;
   }
 }
 
 .content__clik:hover,
 .content__clik:focus {
-      border-radius: 8px;
+  border-radius: 8px;
   box-shadow: var(--color-product-shadow);
 }
 
