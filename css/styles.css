@@ -40,7 +40,13 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
 }
@@ -819,6 +825,7 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .content__clik {
     flex-basis: calc((100% - 90px) / 2);
+    border-radius: 8px;
   }
 }
 
@@ -831,6 +838,7 @@ ul {
 
 .content__clik:hover,
 .content__clik:focus {
+      border-radius: 8px;
   box-shadow: var(--color-product-shadow);
 }
 
