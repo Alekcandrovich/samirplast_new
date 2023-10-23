@@ -989,9 +989,9 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 95%;
-  max-width: 800px;
+  max-width: 600px;
   height: 100%;
-  max-height: 350px;
+  max-height: 600px;
   background-color: var(--background-general);
   box-shadow: var(--color-comand-shadow);
   border-radius: 4px;
@@ -1057,8 +1057,10 @@ ul {
 }
 
 .swiper-container {
-  width: 400px;
-  height: 300px;
+  padding-top: 30px;
+  padding-left: 60px;
+  width: 450px;
+  height: 460px;
 }
 
 .swiper-slide img {

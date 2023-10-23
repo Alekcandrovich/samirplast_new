@@ -21,19 +21,19 @@ function openModalFunction() {
   const swiperWrapper = document.createElement('div');
   swiperWrapper.classList.add('swiper-wrapper');
 
-  const slide1 = createSlide('../images/odejda_1-1.jpg');
-  const slide2 = createSlide('../images/odejda_1-2.jpg');
-  const slide3 = createSlide('../images/odejda_1-3.jpg');
-  const slide4 = createSlide('../images/odejda_1-4.jpg');
-  const slide5 = createSlide('../images/odejda_1-5.jpg');
-  const slide6 = createSlide('../images/odejda_1-6.jpg');
+  const slides = [
+    { imageSrc: '../images/odejda_1-1.jpg', text: 'Текст для первой картинки' },
+    { imageSrc: '../images/odejda_1-2.jpg', text: 'Текст для второй картинки' },
+    { imageSrc: '../images/odejda_1-3.jpg', text: 'Текст для третьей картинки' },
+    { imageSrc: '../images/odejda_1-4.jpg', text: 'Текст для четвертой картинки' },
+    { imageSrc: '../images/odejda_1-5.jpg', text: 'Текст для пятой картинки' },
+    { imageSrc: '../images/odejda_1-6.jpg', text: 'Текст для шестой картинки' },
+  ];
 
-  swiperWrapper.appendChild(slide1);
-  swiperWrapper.appendChild(slide2);
-  swiperWrapper.appendChild(slide3);
-  swiperWrapper.appendChild(slide4);
-  swiperWrapper.appendChild(slide5);
-  swiperWrapper.appendChild(slide6);
+  slides.forEach(slideData => {
+    const slide = createSlide(slideData.imageSrc, slideData.text);
+    swiperWrapper.appendChild(slide);
+  });
 
   swiperContainer.appendChild(swiperWrapper);
 
@@ -41,9 +41,9 @@ function openModalFunction() {
   modal.appendChild(swiperContainer);
   document.body.appendChild(modal);
 
-  new Swiper(swiperContainer, {
+  const swiper = new Swiper(swiperContainer, {
     slidesPerView: 1,
-    spaceBetween: 350,
+    spaceBetween: 800,
     loop: true,
     autoplay: {
       delay: 2000,
@@ -55,7 +55,7 @@ function openModalFunction() {
   closeButton.addEventListener('click', closeModalFunction);
 }
 
-function createSlide(imageSrc) {
+function createSlide(imageSrc, text) {
   const slide = document.createElement('div');
   slide.classList.add('swiper-slide');
 
@@ -63,6 +63,10 @@ function createSlide(imageSrc) {
   image.src = imageSrc;
   image.alt = 'Slide Image';
   slide.appendChild(image);
+
+  const textElement = document.createElement('p');
+  textElement.innerText = text;
+  slide.appendChild(textElement);
 
   return slide;
 }
