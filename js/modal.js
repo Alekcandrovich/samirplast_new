@@ -5,9 +5,6 @@ function openModalFunction() {
   modal.id = 'myModal';
   modal.classList.add('modal');
 
-  const modalContent = document.createElement('div');
-  modalContent.classList.add('modal-content');
-
   const closeButton = document.createElement('button');
   closeButton.setAttribute('type', 'button');
   closeButton.setAttribute('data-modal-close', true);
@@ -18,21 +15,56 @@ function openModalFunction() {
     </svg>
   `;
 
-  const form = document.createElement('form');
-  form.classList.add('form');
+  const swiperContainer = document.createElement('div');
+  swiperContainer.classList.add('swiper-container');
 
-  const formTitle = document.createElement('h2');
-  formTitle.classList.add('form-name');
-  formTitle.innerText = 'Залиште свої дані, ми вам передзвонимо';
+  const swiperWrapper = document.createElement('div');
+  swiperWrapper.classList.add('swiper-wrapper');
 
-  modalContent.appendChild(closeButton);
-  modalContent.appendChild(form);
-  modal.appendChild(modalContent);
+  const slide1 = createSlide('../images/odejda_1-1.jpg');
+  const slide2 = createSlide('../images/odejda_1-2.jpg');
+  const slide3 = createSlide('../images/odejda_1-3.jpg');
+  const slide4 = createSlide('../images/odejda_1-4.jpg');
+  const slide5 = createSlide('../images/odejda_1-5.jpg');
+  const slide6 = createSlide('../images/odejda_1-6.jpg');
+
+  swiperWrapper.appendChild(slide1);
+  swiperWrapper.appendChild(slide2);
+  swiperWrapper.appendChild(slide3);
+  swiperWrapper.appendChild(slide4);
+  swiperWrapper.appendChild(slide5);
+  swiperWrapper.appendChild(slide6);
+
+  swiperContainer.appendChild(swiperWrapper);
+
+  modal.appendChild(closeButton);
+  modal.appendChild(swiperContainer);
   document.body.appendChild(modal);
+
+  new Swiper(swiperContainer, {
+    slidesPerView: 1,
+    spaceBetween: 350,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+  });
 
   modal.style.display = 'block';
 
   closeButton.addEventListener('click', closeModalFunction);
+}
+
+function createSlide(imageSrc) {
+  const slide = document.createElement('div');
+  slide.classList.add('swiper-slide');
+
+  const image = document.createElement('img');
+  image.src = imageSrc;
+  image.alt = 'Slide Image';
+  slide.appendChild(image);
+
+  return slide;
 }
 
 function closeModalFunction() {
@@ -54,4 +86,3 @@ window.addEventListener('click', event => {
 window.addEventListener('load', () => {
   closeModalFunction();
 });
-
