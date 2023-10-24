@@ -943,7 +943,8 @@ ul {
 
 /* !---------------Product Detail-------------------------- */
 
-.product_detail {
+.product_detail_1,
+.product_detail_2{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -952,7 +953,8 @@ ul {
   padding: 10px;
 }
 
-.product_detail:hover {
+.product_detail_1:hover,
+.product_detail_2:hover {
   cursor: pointer;
 }
 
@@ -989,9 +991,9 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 95%;
-  max-width: 550px;
+  max-width: 530px;
   height: 100%;
-  max-height: 600px;
+  max-height: 630px;
   background-color: var(--background-slogan);
   box-shadow: var(--color-comand-shadow);
   border-radius: 8px;
@@ -1046,6 +1048,8 @@ ul {
   color: var(--color-nav-link);
 }
 
+/* !---------------Slider-------------------------- */
+
 .slider-container {
   margin: 20px auto 0 auto;
   width: 400px;
@@ -1064,3 +1068,34 @@ ul {
   border-radius: 8px;
   object-fit: cover;
 }
+
+.slider-arrow {
+  position: absolute;
+  top: 240px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-general);
+  color: var(--color-general);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-backdrop);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: color var(--transition-timing) var(--transition-duration);
+  z-index: 1;
+}
+
+.slider-arrow.prev {
+  left: -30px;
+}
+
+.slider-arrow.next {
+  right: -30px;
+}
+
+.slider-arrow:hover,
+.slider-arrow:focus {
+  color: var(--color-nav-link);
+}
+
