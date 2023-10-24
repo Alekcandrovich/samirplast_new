@@ -1,6 +1,4 @@
-// const productDetail = document.querySelector('.product_detail');
-
-// function openModalFunction() {
+// function createModalWithSlides(slides) {
 //   const modal = document.createElement('div');
 //   modal.id = 'myModal';
 //   modal.classList.add('modal');
@@ -20,15 +18,6 @@
 
 //   const swiperWrapper = document.createElement('div');
 //   swiperWrapper.classList.add('swiper-wrapper');
-
-//   const slides = [
-//     { imageSrc: '../images/odejda_1-1.jpg', text: 'Текст для первой картинки' },
-//     { imageSrc: '../images/odejda_1-2.jpg', text: 'Текст для второй картинки' },
-//     { imageSrc: '../images/odejda_1-3.jpg', text: 'Текст для третьей картинки' },
-//     { imageSrc: '../images/odejda_1-4.jpg', text: 'Текст для четвертой картинки' },
-//     { imageSrc: '../images/odejda_1-5.jpg', text: 'Текст для пятой картинки' },
-//     { imageSrc: '../images/odejda_1-6.jpg', text: 'Текст для шестой картинки' },
-//   ];
 
 //   slides.forEach(slideData => {
 //     const slide = createSlide(slideData.imageSrc, slideData.text);
@@ -52,7 +41,11 @@
 
 //   modal.style.display = 'block';
 
-//   closeButton.addEventListener('click', closeModalFunction);
+//   closeButton.addEventListener('click', () => {
+//     closeModalFunction(modal);
+//   });
+
+//   return modal;
 // }
 
 // function createSlide(imageSrc, text) {
@@ -71,29 +64,34 @@
 //   return slide;
 // }
 
-// function closeModalFunction() {
-//   const modal = document.getElementById('myModal');
+// function closeModalFunction(modal) {
 //   if (modal) {
 //     document.body.removeChild(modal);
 //   }
 // }
 
-// productDetail.addEventListener('click', openModalFunction);
+// const productDetail = document.querySelector('.product_detail');
 
-// window.addEventListener('click', event => {
-//   const modal = document.getElementById('myModal');
-//   if (modal && event.target === modal) {
-//     closeModalFunction();
-//   }
+// productDetail.addEventListener('click', () => {
+//   const slides = [
+//     { imageSrc: '../images/odejda_1-1.jpg', text: 'Текст для картинки 1' },
+//     { imageSrc: '../images/odejda_1-2.jpg', text: 'Текст для картинки 2' },
+//     { imageSrc: '../images/odejda_1-3.jpg', text: 'Текст для картинки 3' },
+//     { imageSrc: '../images/odejda_1-4.jpg', text: 'Текст для картинки 4' },
+//     { imageSrc: '../images/odejda_1-5.jpg', text: 'Текст для картинки 5' },
+//     { imageSrc: '../images/odejda_1-6.jpg', text: 'Текст для картинки 6' },
+//   ];
+
+//   createModalWithSlides(slides);
 // });
 
 // window.addEventListener('load', () => {
-//   closeModalFunction();
+//   closeModalFunction(document.getElementById('myModal'));
 // });
 
 
 
-function createModalWithSlides(slides) {
+function createImageSlider(images) {
   const modal = document.createElement('div');
   modal.id = 'myModal';
   modal.classList.add('modal');
@@ -108,30 +106,31 @@ function createModalWithSlides(slides) {
     </svg>
   `;
 
-  const swiperContainer = document.createElement('div');
-  swiperContainer.classList.add('swiper-container');
+  const sliderContainer = document.createElement('div');
+  sliderContainer.classList.add('slider-container');
 
-  const swiperWrapper = document.createElement('div');
-  swiperWrapper.classList.add('swiper-wrapper');
+  const slider = document.createElement('div');
+  slider.classList.add('slider');
 
-  slides.forEach(slideData => {
-    const slide = createSlide(slideData.imageSrc, slideData.text);
-    swiperWrapper.appendChild(slide);
+  images.forEach(imageData => {
+    const { imageSrc, text } = imageData;
+    const slide = createImageSlide(imageSrc, text);
+    slider.appendChild(slide);
   });
 
-  swiperContainer.appendChild(swiperWrapper);
-
+  sliderContainer.appendChild(slider);
   modal.appendChild(closeButton);
-  modal.appendChild(swiperContainer);
+  modal.appendChild(sliderContainer);
   document.body.appendChild(modal);
 
-  const swiper = new Swiper(swiperContainer, {
-    slidesPerView: 1,
-    spaceBetween: 800,
-    loop: true,
-    autoplay: {
-      delay: 2000,
-    },
+  $(slider).slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: { delay: 2000 },
+    infinite: true,
+    prevArrow: '<div class="prev">Previous</div>',
+    nextArrow: '<div class="next">Next</div>',
+    pauseOnHover: false,
   });
 
   modal.style.display = 'block';
@@ -143,9 +142,9 @@ function createModalWithSlides(slides) {
   return modal;
 }
 
-function createSlide(imageSrc, text) {
+function createImageSlide(imageSrc, text) {
   const slide = document.createElement('div');
-  slide.classList.add('swiper-slide');
+  slide.classList.add('slide');
 
   const image = document.createElement('img');
   image.src = imageSrc;
@@ -153,7 +152,7 @@ function createSlide(imageSrc, text) {
   slide.appendChild(image);
 
   const textElement = document.createElement('p');
-  textElement.innerText = text;
+  textElement.textContent = text;
   slide.appendChild(textElement);
 
   return slide;
@@ -168,7 +167,7 @@ function closeModalFunction(modal) {
 const productDetail = document.querySelector('.product_detail');
 
 productDetail.addEventListener('click', () => {
-  const slides = [
+  const images = [
     { imageSrc: '../images/odejda_1-1.jpg', text: 'Текст для картинки 1' },
     { imageSrc: '../images/odejda_1-2.jpg', text: 'Текст для картинки 2' },
     { imageSrc: '../images/odejda_1-3.jpg', text: 'Текст для картинки 3' },
@@ -177,7 +176,7 @@ productDetail.addEventListener('click', () => {
     { imageSrc: '../images/odejda_1-6.jpg', text: 'Текст для картинки 6' },
   ];
 
-  createModalWithSlides(slides);
+  createImageSlider(images);
 });
 
 window.addEventListener('load', () => {

@@ -831,9 +831,9 @@ ul {
 
 @media screen and (max-width: 767px) {
   .content__clik {
-      flex-basis: calc((100% - 160px) / 1);
-      border-radius: 8px;
-    }
+    flex-basis: calc((100% - 160px) / 1);
+    border-radius: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -984,7 +984,7 @@ ul {
 /* !---------------Modal-------------------------- */
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -997,11 +997,7 @@ ul {
   border-radius: 8px;
   padding: 40px;
   margin: 0;
-  -webkit-transition: -webkit-transform var(--transition-timing) var(--transition-duration);
-  transition: -webkit-transform var(--transition-timing) var(--transition-duration);
   transition: transform var(--transition-timing) var(--transition-duration);
-  transition: transform var(--transition-timing) var(--transition-duration),
-    -webkit-transform var(--transition-timing) var(--transition-duration);
 }
 
 @media screen and (max-width: 1200px) {
@@ -1012,10 +1008,6 @@ ul {
 }
 
 .backdrop.is-hidden .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0);
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -1026,8 +1018,6 @@ ul {
 }
 
 .close-modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1056,14 +1046,21 @@ ul {
   color: var(--color-nav-link);
 }
 
-.swiper-container {
+.slider-container {
   margin: 20px auto 0 auto;
   width: 400px;
+  max-width: 100%;
   height: 500px;
 }
 
-.swiper-slide img {
+.slider {
   width: 100%;
   height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
   object-fit: cover;
 }
