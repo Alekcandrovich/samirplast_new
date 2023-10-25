@@ -869,18 +869,11 @@ ul {
 
 .content .titel-port {
   margin: 0;
+  text-align: center;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-general);
-}
-
-.content .text-port {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--color-last);
 }
 
 .overlay-action {
@@ -1005,7 +998,7 @@ ul {
 @media screen and (max-width: 1200px) {
   .modal {
     max-width: 450px;
-    max-height: 609px;
+    max-height: 600px;
   }
 }
 
@@ -1099,3 +1092,43 @@ ul {
   color: var(--color-nav-link);
 }
 
+
+
+
+
+
+
+.modal_price {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 95%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 630px;
+  background-color: var(--background-slogan);
+  box-shadow: var(--color-comand-shadow);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 0;
+  transition: transform var(--transition-timing) var(--transition-duration);
+}
+
+@media screen and (max-width: 1200px) {
+  .modal_price {
+    max-width: 800px;
+    max-height: 600px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.iframe {
+    margin: 20px auto 0 auto;
+    width: 600px;
+    max-width: 100%;
+    height: 100px;
+}
