@@ -13,6 +13,8 @@
   --color-icon-footer: #ffffff;
   --color-label: #ff0000;
   --color-border-product: #eeeeee;
+  --color-button: #cdffcc;
+  --color-button-link: #a3f5a2;
   --color-overlay-product: rgba(247, 217, 134, 0.8);
   --color-product-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -864,7 +866,7 @@ ul {
   flex-grow: 1;
   border: 1px solid var(--color-border-product);
   border-radius: 8px;
-  padding: 20px 18px;
+  padding: 5px 18px;
 }
 
 .content .titel-port {
@@ -934,10 +936,41 @@ ul {
   pointer-events: none;
 }
 
+.price_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.button {
+  border-radius: 8px;
+  border: none;
+  padding: 2px 50px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--color-button);
+  color: var(--color-general);
+  box-shadow: var(--color-product-shadow);
+  transition: background-color var(--transition-timing) var(--transition-duration);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--color-button-link);
+}
+
+
+
 /* !---------------Product Detail-------------------------- */
 
 .product_detail_1,
-.product_detail_2{
+.product_detail_2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1092,11 +1125,7 @@ ul {
   color: var(--color-nav-link);
 }
 
-
-
-
-
-
+/* !---------------Modal Price-------------------------- */
 
 .modal_price {
   position: fixed;
@@ -1125,8 +1154,3 @@ ul {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
 }
-
-
-
-
-

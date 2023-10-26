@@ -35,7 +35,7 @@ function createImageModal(pdfSrc) {
 function createPDFIframe(pdfSrc) {
   const iframe = document.createElement('iframe');
   iframe.src = `${pdfSrc}#toolbar=0&navpanes=0&scrollbar=0`;
-    iframe.src = '../price/odejda.pdf'
+  iframe.src = '../price/odejda.pdf';
   iframe.width = '100%';
   iframe.height = '500px';
   iframe.setAttribute('frameborder', '0');
@@ -62,4 +62,3 @@ buttons.forEach(button => {
 window.addEventListener('load', () => {
   closeModalFunction(document.getElementById('myModal'));
 });
-
