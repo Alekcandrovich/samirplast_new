@@ -84,3 +84,4 @@ function closeModalFunction(modal) {
 }
 
 export default createImageSlider;
+export { closeModalFunction };

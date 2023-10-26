@@ -1,8 +1,9 @@
 import createImageSlider from './modal.js';
+import { closeModalFunction } from './modal.js';
 
-const productDetail = document.querySelector('.product_detail_1');
+const productDetail_1 = document.querySelector('.product_detail_1');
 
-productDetail.addEventListener('click', () => {
+productDetail_1.addEventListener('click', () => {
   const images = [
     { imageSrc: '../images/odejda_1-1.jpg', text: 'Текст для картинки 1' },
     { imageSrc: '../images/odejda_1-2.jpg', text: 'Текст для картинки 2' },
@@ -16,9 +17,9 @@ productDetail.addEventListener('click', () => {
 createImageSlider(images);
 });
 
-const productDetail2 = document.querySelector('.product_detail_2');
+const productDetail_2 = document.querySelector('.product_detail_2');
 
-productDetail2.addEventListener('click', () => {
+productDetail_2.addEventListener('click', () => {
   const images = [
     { imageSrc: '../images/odejda_2-1.jpg', text: 'Текст для картинки 1' },
     { imageSrc: '../images/odejda_2-2.jpg', text: 'Текст для картинки 2' },
