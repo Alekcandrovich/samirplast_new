@@ -1123,7 +1123,7 @@ ul {
 .slider-arrow:hover,
 .slider-arrow:focus {
   color: var(--color-nav-link);
-}
+  }
 
 /* !---------------Modal Price-------------------------- */
 

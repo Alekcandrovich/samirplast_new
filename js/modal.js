@@ -35,8 +35,20 @@ function createImageSlider(images) {
     slidesToScroll: 1,
     autoplay: { delay: 2000 },
     infinite: true,
-    prevArrow: '<div class="slider-arrow prev"></div>',
-    nextArrow: '<div class="slider-arrow next"></div>',
+    prevArrow: `
+      <div class="slider-arrow prev">
+        <svg class="icon-modal">
+          <use href="../images/icons.svg#icon-left"></use>
+        </svg>
+      </div>
+    `,
+    nextArrow: `
+      <div class="slider-arrow next">
+        <svg class="icon-modal">
+          <use href="../images/icons.svg#icon-right"></use>
+        </svg>
+      </div>
+    `,
     pauseOnHover: false,
   });
 
