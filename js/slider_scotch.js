@@ -11,8 +11,7 @@ productDetail_1.addEventListener('click', () => {
     { imageSrc: '../images/mayka_1-4.jpg', text: 'Текст для картинки 4' },
   ];
 
-
-createImageSlider(images);
+  createImageSlider(images);
 });
 
 const productDetail_2 = document.querySelector('.product_detail_2');
@@ -22,7 +21,6 @@ productDetail_2.addEventListener('click', () => {
     { imageSrc: '../images/mayka_2-1.jpg', text: 'Текст для картинки 1' },
     { imageSrc: '../images/mayka_2-2.jpg', text: 'Текст для картинки 2' },
   ];
-
 
   createImageSlider(images);
 });

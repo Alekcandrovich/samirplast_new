@@ -1,5 +1,5 @@
-import createImageSlider from './modal.js';
-import { closeModalFunction } from './modal.js';
+import createImageSlider from './modal_product.js';
+import { closeModalFunction } from './modal_product.js';
 
 const productDetail_1 = document.querySelector('.product_detail_1');
 
