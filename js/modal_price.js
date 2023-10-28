@@ -36,7 +36,7 @@ function createPDFIframe(pdfSrc) {
   const iframe = document.createElement('iframe');
   iframe.src = `${pdfSrc}#toolbar=0&navpanes=0&scrollbar=0`;
   iframe.width = '100%';
-  iframe.height = '400px';
+  iframe.height = '600px';
   iframe.setAttribute('frameborder', '0');
   iframe.setAttribute('scrolling', 'no');
   return iframe;
