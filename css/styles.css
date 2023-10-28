@@ -1036,9 +1036,9 @@ ul {
   text-decoration: underline;
 }
 
-/* !---------------Modal-------------------------- */
+/* !---------------Modal Product-------------------------- */
 
-.modal {
+.modal_product {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1056,7 +1056,7 @@ ul {
 }
 
 @media screen and (max-width: 1200px) {
-  .modal {
+  .modal_product {
     max-width: 450px;
     max-height: 600px;
   }

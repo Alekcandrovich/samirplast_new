@@ -1,6 +1,6 @@
 function createImageModal(pdfSrc) {
   const modal = document.createElement('div');
-  modal.id = 'myModal';
+  modal.id = 'modalPice';
   modal.classList.add('modal_price');
 
   const closeButton = document.createElement('button');
@@ -48,7 +48,7 @@ function closeModalFunction(modal) {
   }
 }
 
-const buttons = document.querySelectorAll('.open-modal');
+const buttons = document.querySelectorAll('.open-modal_price');
 
 buttons.forEach(button => {
   const pdfSrc = button.getAttribute('data-pdf-src');

@@ -1,7 +1,7 @@
 function createImageSlider(images) {
   const modal = document.createElement('div');
-  modal.id = 'myModal';
-  modal.classList.add('modal');
+  modal.id = 'modalProduct';
+  modal.classList.add('modal_product');
 
   const closeButton = document.createElement('button');
   closeButton.setAttribute('type', 'button');
