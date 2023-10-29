@@ -1,17 +1,13 @@
 function createImageModal(pdfSrc) {
   const modal = document.createElement('div');
   modal.id = 'modalPrice';
-  modal.classList.add('modal_product');
+  modal.classList.add('modal_price');
 
   const closeButton = document.createElement('button');
   closeButton.setAttribute('type', 'button');
   closeButton.setAttribute('data-modal-close', true);
   closeButton.classList.add('close-modal', 'close-posicion');
-  closeButton.innerHTML = `
-    <svg class="icon-modal">
-      <use href="../images/icons.svg#icon-close"></use>
-    </svg>
-  `;
+  closeButton.innerHTML = `<svg class="icon-modal"><use href="../images/icons.svg#icon-close"></use></svg>`;
 
   const pdfContainer = document.createElement('div');
   pdfContainer.classList.add('pdf-container');
