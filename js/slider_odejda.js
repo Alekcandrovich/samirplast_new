@@ -30,5 +30,5 @@ productDetail_2.addEventListener('click', () => {
 });
 
 window.addEventListener('load', () => {
-  closeModalFunction(document.getElementById('myModal'));
+  closeModalFunction(document.getElementById('modalProduct'));
 });

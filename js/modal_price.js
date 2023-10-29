@@ -1,6 +1,6 @@
 function createImageModal(pdfSrc) {
   const modal = document.createElement('div');
-  modal.id = 'modalPice';
+  modal.id = 'modalPrice';
   modal.classList.add('modal_price');
 
   const closeButton = document.createElement('button');
@@ -59,5 +59,5 @@ buttons.forEach(button => {
 });
 
 window.addEventListener('load', () => {
-  closeModalFunction(document.getElementById('myModal'));
+  closeModalFunction(document.getElementById('modalPrice'));
 });
