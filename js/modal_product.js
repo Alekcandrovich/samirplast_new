@@ -7,7 +7,11 @@ function createImageSlider(images) {
   closeButton.setAttribute('type', 'button');
   closeButton.setAttribute('data-modal-close', true);
   closeButton.classList.add('close-modal', 'close-posicion');
-  closeButton.innerHTML = `<svg class="icon-modal"><use href="../images/icons.svg#icon-close"></use></svg>`;
+  closeButton.innerHTML = `
+    <svg class="icon-modal">
+      <use href="../images/icons.svg#icon-close"></use>
+    </svg>
+  `;
 
   const sliderContainer = document.createElement('div');
   sliderContainer.classList.add('slider-container');
