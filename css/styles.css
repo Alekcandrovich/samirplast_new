@@ -17,7 +17,7 @@
   --color-overlay-product: rgba(247, 217, 134, 0.8);
   --color-product-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  --color-backdrop: rgba(0, 0, 0, 0.2);
+  /* --color-backdrop: rgba(0, 0, 0, 0.2); */
   --transition-duration: 250ms;
   --transition-duration-product: 500ms;
   --transition-timing: cubic-bezier(0.4, 0, 0.2, 1);
@@ -924,7 +924,7 @@ ul {
   transform: translateY(0);
 }
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -941,7 +941,7 @@ ul {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 .price_button {
   display: flex;
@@ -1062,9 +1062,9 @@ ul {
   }
 }
 
-.backdrop.is-hidden .modal_product {
+/* .backdrop.is-hidden .modal_product {
   transform: translate(-50%, -50%) scale(0);
-}
+} */
 
 .close-posicion {
   position: absolute;
@@ -1178,6 +1178,6 @@ ul {
   }
 }
 
-.backdrop.is-hidden .modal_price {
+/* .backdrop.is-hidden .modal_price {
   transform: translate(-50%, -50%) scale(0);
-}
+} */

@@ -9,7 +9,7 @@ function createImageSlider(images) {
   closeButton.classList.add('close-modal', 'close-posicion');
   closeButton.innerHTML = `
     <svg class="icon-modal">
-      <use href="../images/icons.svg#icon-close"></use>
+      <use href="/images/icons.svg#icon-close"></use>
     </svg>
   `;
 
