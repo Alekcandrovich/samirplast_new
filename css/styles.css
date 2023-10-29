@@ -923,14 +923,14 @@ ul {
   transform: translateY(0);
 }
 
-.price_button {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 5px;
 }
 
-.button {
+.price_button {
   border-radius: 8px;
   border: none;
   padding: 2px 50px;
@@ -947,8 +947,8 @@ ul {
   transition: background-color var(--transition-timing) var(--transition-duration);
 }
 
-.button:hover,
-.button:focus {
+.price_button:hover,
+.price_button:focus {
   background-color: var(--color-button-link);
 }
 
