@@ -48,7 +48,7 @@ function closeModalFunction(modal) {
   }
 }
 
-const buttons = document.querySelectorAll('.open-modal_price_1');
+const buttons = document.querySelectorAll('.open-modal_price');
 
 buttons.forEach(button => {
   const pdfSrc = button.getAttribute('data-pdf-src');
