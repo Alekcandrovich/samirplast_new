@@ -8,10 +8,9 @@ function createImageModal(pdfSrc) {
   closeButton.setAttribute('data-modal-close', true);
   closeButton.classList.add('close-modal', 'close-posicion');
   closeButton.innerHTML = `
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <title>icon-close</title>
-  <path d="m26.667 7.303-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"/>
-</svg>
+    <svg class="icon-modal">
+      <use href="../images/icons.svg#icon-close"></use>
+    </svg>
   `;
 
   const pdfContainer = document.createElement('div');
