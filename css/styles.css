@@ -1066,9 +1066,9 @@ ul {
 }
 
 .icon-modal {
-  width: 18px;
-  height: 18px;
-  fill: red;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
   align-items: center;
 }
 

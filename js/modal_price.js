@@ -1,7 +1,7 @@
 function createImageModal(pdfSrc) {
   const modal = document.createElement('div');
   modal.id = 'modalPrice';
-  modal.classList.add('modal_price');
+  modal.classList.add('modal_product');
 
   const closeButton = document.createElement('button');
   closeButton.setAttribute('type', 'button');
