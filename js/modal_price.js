@@ -6,7 +6,7 @@ function createImageModal(pdfSrc) {
   const closeButton = document.createElement('button');
   closeButton.setAttribute('type', 'button');
   closeButton.setAttribute('data-modal-close', true);
-  closeButton.classList.add('close-modal', 'close-posicion');
+  closeButton.classList.add('close-modal', 'close-posicion', 'close-modal');
   closeButton.innerHTML = `
     <svg class="icon-modal">
       <use href="../images/icons.svg#icon-close"></use>
