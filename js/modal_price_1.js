@@ -6,7 +6,7 @@ function createImageModal(pdfSrc) {
   const closeButton = document.createElement('button');
   closeButton.setAttribute('type', 'button');
   closeButton.setAttribute('data-modal-close', true);
-  closeButton.classList.add('close-modal', 'close-posicion', 'close-modal');
+  closeButton.classList.add('close-modal', 'close-posicion');
   closeButton.innerHTML = `
     <svg class="icon-modal">
       <use href="../images/icons.svg#icon-close"></use>
@@ -48,7 +48,7 @@ function closeModalFunction(modal) {
   }
 }
 
-const buttons = document.querySelectorAll('.open-modal_price');
+const buttons = document.querySelectorAll('.open-modal_price_1');
 
 buttons.forEach(button => {
   const pdfSrc = button.getAttribute('data-pdf-src');
