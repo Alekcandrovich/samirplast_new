@@ -772,13 +772,14 @@ ul {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .compound {
     margin: 0;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .compound {
     margin: 0;
-    text-align: start;
+    text-align: center;
   }
 }
 
