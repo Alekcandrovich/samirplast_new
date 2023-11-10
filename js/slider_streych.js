@@ -11,7 +11,7 @@ productDetail_1.addEventListener('click', () => {
   ];
 
   createImageSlider(images);
-});"
+});
 // const productDetail_2 = document.querySelector('.product_detail_2');
 
 // productDetail_2.addEventListener('click', () => {
