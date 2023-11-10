@@ -19,10 +19,11 @@ const productDetail_2 = document.querySelector('.product_detail_2');
 
 productDetail_2.addEventListener('click', () => {
   const images = [
-    { imageSrc: '../images/bopp_2-1.jpg', text: "Текст для картинки 1" },
-    { imageSrc: '../images/bopp_2-2.jpg', text: "Текст для картинки 2" },
-    { imageSrc: '../images/bopp_2-3.jpg', text: "Текст для картинки 3" },
-    { imageSrc: '../images/bopp_2-4.jpg', text: "Текст для картинки 4" },
+    { imageSrc: '../images/bopp_2-1.jpg', text: 'Текст для картинки 1' },
+    { imageSrc: '../images/bopp_2-2.jpg', text: 'Текст для картинки 2' },
+    { imageSrc: '../images/bopp_2-3.jpg', text: 'Текст для картинки 3' },
+    { imageSrc: '../images/bopp_2-4.jpg', text: 'Текст для картинки 4' },
+    { imageSrc: '../images/bopp_2-5.jpg', text: 'Текст для картинки 5' },
   ];
 
   createImageSlider(images);
