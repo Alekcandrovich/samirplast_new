@@ -72,6 +72,9 @@ function createImageSlide(imageSrc, text) {
 
   const textElement = document.createElement('p');
   textElement.textContent = text;
+  textElement.style.textAlign = 'center';
+  textElement.style.marginTop = '10px';
+  textElement.style.width = '100%';
   slide.appendChild(textElement);
 
   return slide;

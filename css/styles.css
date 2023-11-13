@@ -58,8 +58,16 @@ ul {
   margin: 0;
 }
 
-.header {
+header {
+  background-color: var(--background-general);
   border-bottom: 1px solid var(--color-border-header);
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /* !---------------logotip-------------------------- */
@@ -1027,20 +1035,21 @@ ul {
   transform: translate(-50%, -50%) scale(1);
   width: 95%;
   height: 100%;
-  max-width: 530px;
+  max-width: 550px;
   max-height: 630px;
   background-color: var(--background-slogan);
   box-shadow: var(--color-comand-shadow);
   border-radius: 8px;
   padding: 40px;
   margin: 0;
+  z-index: 1000;
   transition: transform var(--transition-timing) var(--transition-duration);
 }
 
 @media screen and (max-width: 1200px) {
   .modal_product {
     max-width: 450px;
-    max-height: 600px;
+    max-height: 580px;
   }
 }
 
@@ -1146,6 +1155,7 @@ ul {
   border-radius: 8px;
   padding: 40px;
   margin: 0;
+  z-index: 1000;
   transition: transform var(--transition-timing) var(--transition-duration);
 }
 
