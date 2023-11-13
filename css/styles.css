@@ -1175,8 +1175,9 @@ header.fixed {
 
 .contact-page {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 .connection {
@@ -1187,41 +1188,39 @@ header.fixed {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  align-items: center;
+  align-items: flex-end;
 }
 
 @media screen and (min-width: 1200px) {
   .connection {
-    margin: 20px 0 0 0;
+    margin: 0;
   }
 }
 
 .connection .link {
   display: block;
-  margin: 2px 0 0 0;
   color: var(--color-general);
   text-decoration: none;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  align-items: center;
+  align-items: flex-end;
   transition: color var(--transition-timing) var(--transition-duration);
 }
 
 @media screen and (min-width: 1200px) {
   .connection .link {
-    margin: 2px 0 0 0;
     padding-left: 8px;
   }
 }
 
 .connection .link:hover,
 .connection .link:focus {
-  color: var(--color-footer-link);
+  color: var(--color-nav-link);
 }
 
 .connection-titel {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .connection-item {
@@ -1231,17 +1230,21 @@ header.fixed {
 }
 
 .schedule {
-  margin: 1px 0 0 0;
   padding-left: 8px;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  align-items: flex-start;
 }
 
 .map {
-  margin-top: 10px;
-  width: 700px;
+  width: 750px;
   height: 600px;
-  border: 1px solid var(--color-button);
+  border: 2px solid var(--color-button);
   border-radius: 10px;
+}
+
+.connection .link:hover,
+.connection .link:focus {
+  border-color: var(--color-nav-link);
 }
