@@ -1208,9 +1208,23 @@ header.fixed {
   align-items: flex-end;
 }
 
+@media screen and (max-width: 767px) {
+  .content__clik {
+    flex-basis: calc((100% - 160px) / 1);
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .content__clik {
+    flex-basis: calc((100% - 150px) / 2);
+    border-radius: 8px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .connection {
-    margin: 0;
+  .content__clik {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -1236,7 +1250,16 @@ header.fixed {
   color: var(--color-nav-link);
 }
 
-.connection-titel {
+.connection_titel-contact {
+  margin-bottom: 15px;
+}
+
+.connection_titel-work {
+  margin-top: 170px;
+  margin-bottom: 15px;
+}
+
+.connection_titel-map {
   margin-bottom: 15px;
 }
 
