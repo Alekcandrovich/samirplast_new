@@ -1237,7 +1237,7 @@ header.fixed {
 .connection .link:hover,
 .connection .link:focus {
   color: var(--color-nav-link);
-  border-color: var(--color-nav-link)
+  border-color: var(--color-nav-link);
 }
 
 .connection_titel-contact {
