@@ -621,12 +621,10 @@ header.fixed {
 .marquee1 {
   animation: marquee1 8s linear infinite;
 }
-
 @keyframes marquee1 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -635,12 +633,10 @@ header.fixed {
 .marquee2 {
   animation: marquee2 10s linear infinite;
 }
-
 @keyframes marquee2 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -649,12 +645,10 @@ header.fixed {
 .marquee3 {
   animation: marquee3 9s linear infinite;
 }
-
 @keyframes marquee3 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -663,12 +657,10 @@ header.fixed {
 .marquee4 {
   animation: marquee4 11s linear infinite;
 }
-
 @keyframes marquee4 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
@@ -677,32 +669,18 @@ header.fixed {
 .marquee5 {
   animation: marquee5 15s linear infinite;
 }
-
 @keyframes marquee5 {
   0% {
     transform: translateX(100%);
   }
-
   100% {
     transform: translateX(-100%);
   }
 }
 
-.choice1:hover,
-.choice1:focus {
-  transform: scale(1.06) rotate(2deg);
-  transition: transform 0.3s;
-}
-
-.choice2:hover,
-.choice2:focus {
+.choice:hover,
+.choice:focus {
   transform: scale(1.08);
-  transition: transform 0.3s;
-}
-
-.choice3:hover,
-.choice3:focus {
-  transform: scale(1.10) rotate(-3deg);
   transition: transform 0.3s;
 }
 
