@@ -54,8 +54,20 @@ function createImageSlider(images) {
 
   modal.style.display = 'block';
 
+  const closeOnEsc = (event) => {
+    if (event.key === 'Escape') {
+      closeModalFunction(modal);
+    }
+  };
+
   closeButton.addEventListener('click', () => {
     closeModalFunction(modal);
+  });
+
+  document.addEventListener('keydown', closeOnEsc);
+
+  modal.addEventListener('transitionend', () => {
+    document.removeEventListener('keydown', closeOnEsc);
   });
 
   return modal;

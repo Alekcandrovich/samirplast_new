@@ -23,8 +23,20 @@ function createImageModal(pdfSrc) {
   modal.appendChild(pdfContainer);
   document.body.appendChild(modal);
 
+  const closeOnEsc = event => {
+    if (event.key === 'Escape') {
+      closeModalFunction(modal);
+    }
+  };
+
   closeButton.addEventListener('click', () => {
     closeModalFunction(modal);
+  });
+
+  document.addEventListener('keydown', closeOnEsc);
+
+  modal.addEventListener('transitionend', () => {
+    document.removeEventListener('keydown', closeOnEsc);
   });
 
   modal.style.display = 'block';
