@@ -1190,23 +1190,12 @@ header.fixed {
 
 /* !---------------Contact Page-------------------------- */
 
-.contact-page {
+/* .contact-page {
   display: flex;
   gap: 20px;
   justify-content: center;
   margin-bottom: 10px;
-}
-
-.connection {
-  margin: 0;
-  color: var(--color-general);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  align-items: flex-end;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .content__clik {
@@ -1223,13 +1212,28 @@ header.fixed {
 }
 
 @media screen and (min-width: 1200px) {
-  .content__clik {
-    flex-basis: calc((100% - 90px) / 4);
+  .contact-page {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 10px;
   }
+}
+
+.connection {
+  margin: 0;
+  color: var(--color-general);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  align-items: flex-end;
 }
 
 .connection .link {
   display: block;
+  padding-left: 8px;
   color: var(--color-general);
   text-decoration: none;
   font-size: 16px;
@@ -1237,12 +1241,6 @@ header.fixed {
   letter-spacing: 0.03em;
   align-items: flex-end;
   transition: color var(--transition-timing) var(--transition-duration);
-}
-
-@media screen and (min-width: 1200px) {
-  .connection .link {
-    padding-left: 8px;
-  }
 }
 
 .connection .link:hover,

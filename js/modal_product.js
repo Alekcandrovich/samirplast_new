@@ -54,21 +54,27 @@ function createImageSlider(images) {
 
   modal.style.display = 'block';
 
-  const closeOnEsc = (event) => {
+  const closeOnEsc = event => {
     if (event.key === 'Escape') {
-      closeModalFunction(modal);
+      closeModal();
     }
   };
 
-  closeButton.addEventListener('click', () => {
+  const closeModal = () => {
+    document.removeEventListener('keydown', closeOnEsc);
+    modal.removeEventListener('click', modalClickHandler);
     closeModalFunction(modal);
-  });
+  };
+
+  const modalClickHandler = event => {
+    if (event.target.closest('[data-modal-close]')) {
+      closeModal();
+    }
+  };
+
+  modal.addEventListener('click', modalClickHandler);
 
   document.addEventListener('keydown', closeOnEsc);
-
-  modal.addEventListener('transitionend', () => {
-    document.removeEventListener('keydown', closeOnEsc);
-  });
 
   return modal;
 }
@@ -93,7 +99,7 @@ function createImageSlide(imageSrc, text) {
 }
 
 function closeModalFunction(modal) {
-  if (modal) {
+  if (modal && document.body.contains(modal)) {
     document.body.removeChild(modal);
   }
 }
