@@ -23,21 +23,26 @@ function createImageModal(pdfSrc) {
   modal.appendChild(pdfContainer);
   document.body.appendChild(modal);
 
+  let isModalOpen = true;
+
   const closeOnEsc = event => {
-    if (event.key === 'Escape') {
-      closeModalFunction(modal);
+    if (event.key === 'Escape' && isModalOpen) {
+      closeModal();
     }
   };
 
-  closeButton.addEventListener('click', () => {
+  const closeModal = () => {
+    isModalOpen = false;
+    document.removeEventListener('keydown', closeOnEsc);
+    modal.removeEventListener('animationend', closeModal);
     closeModalFunction(modal);
-  });
+  };
+
+  closeButton.addEventListener('click', closeModal);
 
   document.addEventListener('keydown', closeOnEsc);
 
-  modal.addEventListener('transitionend', () => {
-    document.removeEventListener('keydown', closeOnEsc);
-  });
+  modal.addEventListener('animationend', closeModal);
 
   modal.style.display = 'block';
 
@@ -55,7 +60,7 @@ function createPDFIframe(pdfSrc) {
 }
 
 function closeModalFunction(modal) {
-  if (modal) {
+  if (modal && document.body.contains(modal)) {
     document.body.removeChild(modal);
   }
 }
@@ -70,6 +75,6 @@ buttons.forEach(button => {
   });
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   closeModalFunction(document.getElementById('modalPrice'));
 });

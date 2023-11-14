@@ -7,19 +7,19 @@ productDetail_1.addEventListener('click', () => {
   const images = [
     {
       imageSrc: '../images/trempel_1-1.jpg',
-      text: "пластмасовий дитячий (32см.)"
+      text: "пластмасовий дитячий (32см)"
     },
     {
       imageSrc: '../images/trempel_1-2.jpg',
-      text: "пластмасовий (літо, 38см.)"
+      text: "пластмасовий (літо, 38см)"
     },
     {
       imageSrc: '../images/trempel_1-3.jpg',
-      text: "пластмасовий (весна, 40см.)"
+      text: "пластмасовий (весна, 40см)"
     },
     {
       imageSrc: '../images/trempel_1-4.jpg',
-      text: "пластмасовий (зима, 40см.)"
+      text: "пластмасовий (зима, 40см)"
     },
   ];
 
@@ -32,23 +32,23 @@ productDetail_2.addEventListener('click', () => {
   const images = [
     {
       imageSrc: '../images/trempel_2-1.jpg',
-      text: "об'ємний з металевим гачком (ширина 38см.)"
+      text: "об'ємний з металевим гачком (ширина 38см)"
     },
     {
       imageSrc: '../images/trempel_2-2.jpg',
-      text: "об'ємний з металевим гачком (ширина 40см.)"
+      text: "об'ємний з металевим гачком (ширина 40см)"
     },
     {
       imageSrc: '../images/trempel_2-3.jpg',
-      text: "об'ємний з металевим гачком (ширина 42см.)"
+      text: "об'ємний з металевим гачком (ширина 42см)"
     },
     {
       imageSrc: '../images/trempel_2-4.jpg',
-      text: "універсальний з металевим гачком (ширина 38см.)",
+      text: "універсальний з металевим гачком (ширина 38см)",
     },
     {
       imageSrc: '../images/trempel_2-5.jpg',
-      text: "універсальний з металевим гачком (ширина 40см.)",
+      text: "універсальний з металевим гачком (ширина 40см)",
     },
   ];
 
