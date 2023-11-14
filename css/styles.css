@@ -209,16 +209,22 @@ header.fixed {
 }
 
 .contact__icon.mailto {
-  padding: 32px 0 0 0;
+  padding: 0;
+  margin-top: 32px;
   margin-left: 40px;
   text-decoration: none;
-  cursor: auto;
+  cursor: pointer;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--color-general);
   transition: color var(--transition-timing) var(--transition-duration);
+}
+
+.contact__icon.mailto:hover,
+.contact__icon.mailto:focus {
+  color: var(--color-nav-link);
 }
 
 @media screen and (min-width: 768px) {
@@ -248,16 +254,22 @@ header.fixed {
 }
 
 .contact__icon.tel {
-  padding: 174px 0 0 0;
+  padding: 0;
+  margin-top: 170px;
   margin-left: 40px;
   text-decoration: none;
-  cursor: auto;
+  cursor: pointer;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var(--color-link);
+  color: var(--color-general);
   transition: color var(--transition-timing) var(--transition-duration);
+}
+
+.contact__icon.tel:hover,
+.contact__icon.tel:focus {
+  color: var(--color-nav-link);
 }
 
 @media screen and (min-width: 768px) {
@@ -314,15 +326,9 @@ header.fixed {
 .menu-icon__menu {
   width: 40px;
   height: 40px;
-  fill: currentColor;
   margin-left: auto;
   transition: color var(--transition-timing) var(--transition-duration),
     border var(--transition-timing) var(--transition-duration);
-}
-
-.menu-icon__menu:hover,
-.menu-icon__menu:focus {
-  color: var(--color-nav-link);
 }
 
 .menu-icon__close {
@@ -331,15 +337,21 @@ header.fixed {
   right: 15px;
   width: 40px;
   height: 40px;
-  fill: currentColor;
   margin-left: auto;
   transition: color var(--transition-timing) var(--transition-duration),
     border var(--transition-timing) var(--transition-duration);
 }
 
+.menu-icon__menu,
+.menu-icon__close {
+  fill: var(--color-general);
+}
+
+.menu-icon__menu:hover,
+.menu-icon__menu:focus,
 .menu-icon__close:hover,
 .menu-icon__close:focus {
-  color: var(--color-nav-link);
+  fill: var(--color-nav-link);
 }
 
 .icon-menu {
@@ -390,14 +402,19 @@ header.fixed {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: var(--color-link);
+  color: var(--color-general);
+}
+
+.menu__social:hover,
+.menu__social:focus {
+  color: var(--color-nav-link);
 }
 
 .menu__span {
   padding: 10px;
   width: 22px;
   height: 0px;
-  border: 1px solid var(--color-border-form);
+  border: 1px solid var(--color-general);
   transform: rotate(90deg);
 }
 
@@ -1181,7 +1198,7 @@ header.fixed {
 }
 
 .connection {
-  margin: 15px 0 0 0;
+  margin: 0;
   color: var(--color-general);
   font-style: normal;
   font-size: 14px;
