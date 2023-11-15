@@ -9,9 +9,6 @@ productDetail_1.addEventListener('click', () => {
     { imageSrc: '../images/mayka_1-2.jpg', text: 'Текст для картинки 2' },
     { imageSrc: '../images/mayka_1-3.jpg', text: 'Текст для картинки 3' },
     { imageSrc: '../images/mayka_1-4.jpg', text: 'Текст для картинки 4' },
-    { imageSrc: '../images/mayka_1-5.jpg', text: 'Текст для картинки 5' },
-    { imageSrc: '../images/mayka_1-6.jpg', text: 'Текст для картинки 6' },
-    { imageSrc: '../images/mayka_1-7.jpg', text: 'Текст для картинки 7' },
   ];
 
 
