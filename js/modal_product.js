@@ -94,20 +94,22 @@ function createImageSlide(imageSrc, text) {
   textElement.style.width = '100%';
   slide.appendChild(textElement);
 
-  const [prefix, suffix] = text.split('(');
+  if (text.includes('(')) {
+    const [prefix, suffix] = text.split('(');
 
-  const prefixSpan = document.createElement('span');
-  prefixSpan.textContent = prefix;
-  textElement.appendChild(prefixSpan);
+    const prefixSpan = document.createElement('span');
+    prefixSpan.textContent = prefix;
+    textElement.appendChild(prefixSpan);
 
-  const suffixSpan = document.createElement('span');
-  const [size, rest] = suffix.split(')');
-  suffixSpan.textContent = `${size}${rest}`;
-  suffixSpan.style.fontWeight = 'bold';
-  suffixSpan.style.color = 'red';
-  textElement.appendChild(suffixSpan);
-
-  slide.appendChild(textElement);
+    const suffixSpan = document.createElement('span');
+    const [size, rest] = suffix.split(')');
+    suffixSpan.textContent = `${size}${rest}`;
+    suffixSpan.style.fontWeight = 'bold';
+    suffixSpan.style.color = 'red';
+    textElement.appendChild(suffixSpan);
+  } else {
+    textElement.textContent = text;
+  }
 
   return slide;
 }
