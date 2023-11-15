@@ -89,10 +89,24 @@ function createImageSlide(imageSrc, text) {
   slide.appendChild(image);
 
   const textElement = document.createElement('p');
-  textElement.textContent = text;
   textElement.style.textAlign = 'center';
   textElement.style.marginTop = '10px';
   textElement.style.width = '100%';
+  slide.appendChild(textElement);
+
+  const [prefix, suffix] = text.split('(');
+
+  const prefixSpan = document.createElement('span');
+  prefixSpan.textContent = prefix;
+  textElement.appendChild(prefixSpan);
+
+  const suffixSpan = document.createElement('span');
+  const [size, rest] = suffix.split(')');
+  suffixSpan.textContent = `${size}${rest}`;
+  suffixSpan.style.fontWeight = 'bold';
+  suffixSpan.style.color = 'red';
+  textElement.appendChild(suffixSpan);
+
   slide.appendChild(textElement);
 
   return slide;
