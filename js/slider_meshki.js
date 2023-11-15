@@ -17,11 +17,11 @@ const productDetail_2 = document.querySelector('.product_detail_2');
 
 productDetail_2.addEventListener('click', () => {
   const images = [
-    { imageSrc: '../images/musor_1-1.jpg', text: '30 літрів' },
-    { imageSrc: '../images/musor_1-2.jpg', text: '60 лiтрiв' },
-    { imageSrc: '../images/musor_1-3.jpg', text: '120 лiтрiв' },
-    { imageSrc: '../images/musor_1-4.jpg', text: '240 лiтрiв' },
-    { imageSrc: '../images/musor_1-5.jpg', text: 'Рулон віддільних пакетів' },
+    { imageSrc: '../images/meshki_1-1.jpg', text: '30 літрів' },
+    { imageSrc: '../images/meshki_1-2.jpg', text: '60 лiтрiв' },
+    { imageSrc: '../images/meshki_1-3.jpg', text: '120 лiтрiв' },
+    { imageSrc: '../images/meshki_1-4.jpg', text: '240 лiтрiв' },
+    { imageSrc: '../images/meshki_1-5.jpg', text: 'Рулон віддільних пакетів' },
   ];
 
   createImageSlider(images);
