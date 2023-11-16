@@ -1,4 +1,9 @@
+let overlayCount = 0;
+
 function createImageModal(pdfSrc) {
+  const modalOverlay = document.createElement('div');
+  modalOverlay.classList.add('modal-overlay');
+
   const modal = document.createElement('div');
   modal.id = 'modalPrice';
   modal.classList.add('modal_price');
@@ -21,7 +26,16 @@ function createImageModal(pdfSrc) {
 
   modal.appendChild(closeButton);
   modal.appendChild(pdfContainer);
+
+  if (overlayCount === 0) {
+    document.body.classList.add('modal-open');
+    document.body.appendChild(modalOverlay);
+    modalOverlay.style.display = 'block';
+  }
+
   document.body.appendChild(modal);
+
+  overlayCount++;
 
   let isModalOpen = true;
 
@@ -33,15 +47,22 @@ function createImageModal(pdfSrc) {
 
   const closeModal = () => {
     isModalOpen = false;
-    document.removeEventListener('keydown', closeOnEsc);
+    overlayCount--;
+
+    if (overlayCount === 0) {
+      document.body.classList.remove('modal-open');
+      document.body.removeChild(modalOverlay);
+    }
+
+    document.body.removeEventListener('keydown', closeOnEsc);
+    modalOverlay.removeEventListener('click', closeModal);
     modal.removeEventListener('animationend', closeModal);
-    closeModalFunction(modal);
+    closeModalFunction(modal, modalOverlay);
   };
 
   closeButton.addEventListener('click', closeModal);
-
-  document.addEventListener('keydown', closeOnEsc);
-
+  document.body.addEventListener('keydown', closeOnEsc);
+  modalOverlay.addEventListener('click', closeModal);
   modal.addEventListener('animationend', closeModal);
 
   modal.style.display = 'block';
@@ -59,9 +80,11 @@ function createPDFIframe(pdfSrc) {
   return iframe;
 }
 
-function closeModalFunction(modal) {
+function closeModalFunction(modal, overlay) {
   if (modal && document.body.contains(modal)) {
+    document.body.style.overflow = '';
     document.body.removeChild(modal);
+    document.body.removeChild(overlay);
   }
 }
 
