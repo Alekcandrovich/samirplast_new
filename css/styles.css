@@ -1156,7 +1156,6 @@ header.fixed {
   padding: 40px;
   margin: 0;
   z-index: 1000;
-  overflow-y: auto;
   transition: transform var(--transition-timing) var(--transition-duration);
 }
 
