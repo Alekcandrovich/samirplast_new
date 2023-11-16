@@ -1,4 +1,9 @@
+let overlayCount = 0;
+
 function createImageSlider(images) {
+  const modalOverlay = document.createElement('div');
+  modalOverlay.classList.add('modal-overlay');
+
   const modal = document.createElement('div');
   modal.id = 'modalProduct';
   modal.classList.add('modal_product');
@@ -28,7 +33,16 @@ function createImageSlider(images) {
   sliderContainer.appendChild(slider);
   modal.appendChild(closeButton);
   modal.appendChild(sliderContainer);
+
+  if (overlayCount === 0) {
+    document.body.classList.add('modal-open');
+    document.body.appendChild(modalOverlay);
+    modalOverlay.style.display = 'block';
+  }
+
   document.body.appendChild(modal);
+
+  overlayCount++;
 
   $(slider).slick({
     slidesToShow: 1,
@@ -54,27 +68,33 @@ function createImageSlider(images) {
 
   modal.style.display = 'block';
 
+  let isModalOpen = true;
+
   const closeOnEsc = event => {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && isModalOpen) {
       closeModal();
     }
   };
 
   const closeModal = () => {
-    document.removeEventListener('keydown', closeOnEsc);
-    modal.removeEventListener('click', modalClickHandler);
-    closeModalFunction(modal);
-  };
+    isModalOpen = false;
+    overlayCount--;
 
-  const modalClickHandler = event => {
-    if (event.target.closest('[data-modal-close]')) {
-      closeModal();
+    if (overlayCount === 0) {
+      document.body.classList.remove('modal-open');
+      document.body.removeChild(modalOverlay);
     }
+
+    document.body.removeEventListener('keydown', closeOnEsc);
+    modalOverlay.removeEventListener('click', closeModal);
+    modal.removeEventListener('animationend', closeModal);
+    closeModalFunction(modal, modalOverlay);
   };
 
-  modal.addEventListener('click', modalClickHandler);
-
-  document.addEventListener('keydown', closeOnEsc);
+  closeButton.addEventListener('click', closeModal);
+  document.body.addEventListener('keydown', closeOnEsc);
+  modalOverlay.addEventListener('click', closeModal);
+  modal.addEventListener('animationend', closeModal);
 
   return modal;
 }
