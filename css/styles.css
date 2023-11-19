@@ -1217,6 +1217,12 @@ header.fixed {
   .connection_titel-map {
     margin-bottom: 10px;
   }
+
+  .connect {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1226,17 +1232,14 @@ header.fixed {
     justify-content: center;
   }
 
-  .connection_titel-contact {
+  .connection_titel-contact,
+  .connection_titel-work,
+  .connection_titel-map {
     margin-bottom: 15px;
   }
 
   .connection_titel-work {
     margin-top: 170px;
-    margin-bottom: 15px;
-  }
-
-  .connection_titel-map {
-    margin-bottom: 15px;
   }
 }
 
@@ -1248,7 +1251,6 @@ header.fixed {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  align-items: flex-end;
 }
 
 .connection .link {
@@ -1258,7 +1260,7 @@ header.fixed {
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   transition: color var(--transition-timing) var(--transition-duration);
 }
 
@@ -1284,7 +1286,7 @@ header.fixed {
 
 .map {
   width: 100%;
-  max-width: 750px;
+  max-width: 780px;
   height: auto;
   border: 2px solid var(--color-button);
   border-radius: 10px;
