@@ -37,7 +37,6 @@ function createImageSlider(images) {
   if (overlayCount === 0) {
     document.body.classList.add('modal-open');
     document.body.appendChild(modalOverlay);
-    modalOverlay.style.display = 'block';
   }
 
   document.body.appendChild(modal);
@@ -66,8 +65,6 @@ function createImageSlider(images) {
     pauseOnHover: false,
   });
 
-  modal.style.display = 'block';
-
   let isModalOpen = true;
 
   const closeOnEsc = event => {
@@ -86,15 +83,11 @@ function createImageSlider(images) {
     }
 
     document.body.removeEventListener('keydown', closeOnEsc);
-    modalOverlay.removeEventListener('click', closeModal);
-    modal.removeEventListener('animationend', closeModal);
-    closeModalFunction(modal, modalOverlay);
+    closeModalFunction(modal);
   };
 
   closeButton.addEventListener('click', closeModal);
   document.body.addEventListener('keydown', closeOnEsc);
-  modalOverlay.addEventListener('click', closeModal);
-  modal.addEventListener('animationend', closeModal);
 
   return modal;
 }

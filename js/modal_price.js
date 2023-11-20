@@ -55,17 +55,11 @@ function createImageModal(pdfSrc) {
     }
 
     document.body.removeEventListener('keydown', closeOnEsc);
-    modalOverlay.removeEventListener('click', closeModal);
-    modal.removeEventListener('animationend', closeModal);
     closeModalFunction(modal, modalOverlay);
   };
 
   closeButton.addEventListener('click', closeModal);
   document.body.addEventListener('keydown', closeOnEsc);
-  modalOverlay.addEventListener('click', closeModal);
-  modal.addEventListener('animationend', closeModal);
-
-  modal.style.display = 'block';
 
   return modal;
 }
