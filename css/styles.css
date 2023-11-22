@@ -1008,7 +1008,8 @@ header.fixed {
 /* !---------------Product Detail-------------------------- */
 
 .product_detail_1,
-.product_detail_2 {
+.product_detail_2,
+.product_detail_3 {
   border: 2px solid #c8c8c8;
   border-radius: 8px;
   padding: 10px;
@@ -1017,7 +1018,8 @@ header.fixed {
 @media screen and (min-width: 768px) {
 
   .product_detail_1,
-  .product_detail_2 {
+  .product_detail_2,
+  .product_detail_3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1025,7 +1027,8 @@ header.fixed {
 }
 
 .product_detail_1:hover,
-.product_detail_2:hover {
+.product_detail_2:hover,
+.product_detail_3:hover {
   cursor: pointer;
 }
 
