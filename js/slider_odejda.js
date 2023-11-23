@@ -5,8 +5,9 @@ const productDetail_1 = document.querySelector('.product_detail_1');
 
 productDetail_1.addEventListener('click', () => {
   const images = [
-    { imageSrc: '../images/odejda_1-1.jpg', text: "Текст для картинки 1" },
-    { imageSrc: '../images/odejda_1-2.jpg', text: "Текст для картинки 2" },
+    { imageSrc: '../images/odejda_1-1.jpg', text: 'Текст для картинки 1' },
+    { imageSrc: '../images/odejda_1-2.jpg', text: 'Текст для картинки 2' },
+    { imageSrc: '../images/odejda_1-3.jpg', text: 'Текст для картинки 3' },
   ];
 
 
