@@ -19,18 +19,6 @@ productDetail_2.addEventListener('click', () => {
   const images = [
     { imageSrc: '../images/rukav_2-1.jpg', text: 'Текст для картинки 1' },
     { imageSrc: '../images/rukav_2-2.jpg', text: 'Текст для картинки 2' },
-    { imageSrc: '../images/rukav_2-3.jpg', text: 'Текст для картинки 3' },
-  ];
-
-  createImageSlider(images);
-});
-
-const productDetail_3 = document.querySelector('.product_detail_3');
-
-productDetail_3.addEventListener('click', () => {
-  const images = [
-    { imageSrc: '../images/rukav_3-1.jpg', text: 'Текст для картинки 1' },
-    { imageSrc: '../images/rukav_3-2.jpg', text: 'Текст для картинки 2' },
   ];
 
   createImageSlider(images);
