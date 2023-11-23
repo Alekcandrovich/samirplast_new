@@ -652,7 +652,7 @@ header.fixed {
 }
 
 .marquee3 {
-  animation: marquee3 9s linear infinite;
+  animation: marquee3 12s linear infinite;
 }
 
 @keyframes marquee3 {
@@ -666,7 +666,7 @@ header.fixed {
 }
 
 .marquee4 {
-  animation: marquee4 11s linear infinite;
+  animation: marquee4 14s linear infinite;
 }
 
 @keyframes marquee4 {
