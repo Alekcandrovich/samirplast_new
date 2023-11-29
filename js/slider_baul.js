@@ -19,7 +19,7 @@ const productDetail_2 = document.querySelector('.product_detail_2');
 productDetail_2.addEventListener('click', () => {
   const images = [
     { imageSrc: '../images/baul_2-1.jpg', text: 'Слайд 1 з 2 (Баул поліпропіленовий)' },
-    { imageSrc: '../images/no_image_2.jpg', text: 'Слайд 2 з 2 (Баул поліпропіленовий)' },
+    { imageSrc: '../images/baul_2-2.jpg', text: 'Слайд 2 з 2 (Баул поліпропіленовий)' },
   ];
 
   createImageSlider(images);
