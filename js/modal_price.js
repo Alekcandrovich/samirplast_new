@@ -75,10 +75,13 @@ function createPDFIframe(pdfSrc) {
 }
 
 function closeModalFunction(modal, overlay) {
-  if (modal && document.body.contains(modal)) {
+  if (modal && modal.parentElement) {
     document.body.style.overflow = '';
-    document.body.removeChild(modal);
-    document.body.removeChild(overlay);
+    modal.parentElement.removeChild(modal);
+  }
+
+  if (overlay && overlay.parentElement) {
+    overlay.parentElement.removeChild(overlay);
   }
 }
 
