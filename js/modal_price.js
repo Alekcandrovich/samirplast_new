@@ -32,7 +32,7 @@ function createImageModal(pdfSrc) {
     document.body.appendChild(modalOverlay);
     modalOverlay.style.display = 'block';
   }
-
+  
   document.body.appendChild(modal);
 
   overlayCount++;
